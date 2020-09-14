@@ -1,0 +1,264 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
+body {
+    font-family: "Gotham Pro", sans-serif;
+    color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+button {
+    display: block;
+    cursor: pointer;
+}
+
+input,
+button {
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn {
+    padding: 12px 22px;
+    font-size: 18px;
+    border-radius: 12px;
+    color: #fff;
+    min-height: 56px;
+
+    &.btn-primary {
+        background: $btn-primary;
+    }
+
+    &.btn-secondary {
+        background: $btn-secondary;
+    }
+}
+
+.nav {
+    background: $header-bg;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 38px 0 41px;
+        min-height: 147px;
+    }
+
+    &__logo {
+        min-width: 78px;
+
+        &>img {
+            width: 100%;
+        }
+    }
+
+    &__list {
+        display: flex;
+
+        &>li {
+            margin-right: 43px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 15px;
+                color: #fff;
+            }
+        }
+    }
+
+    &-actions {
+        display: flex;
+
+        &__btn {
+            border-radius: 9px;
+            background: $header-btn;
+            font-size: 17px;
+            line-height: 16px;
+            min-height: 48px;
+
+            &:first-child {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 147px);
+    background: $header-bg;
+    padding-bottom: 75px;
+
+    &-wrapper {
+        max-width: 682px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 56px;
+        color: #fff;
+        margin-bottom: 48px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    &-contact {
+        display: flex;
+
+        &__input {
+            margin-right: 11px;
+            font-size: 18px;
+            padding: 15px 18px 15px 26px;
+            height: 56px;
+            border-radius: 12px;
+
+            &.flag {
+                width: 80px;
+            }
+        }
+
+        &__button {
+            width: 100%;
+        }
+    }
+}
+
+.footer {
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 45px 0 50px;
+    }
+
+    &__logo {
+        min-width: 78px;
+
+        &>img {
+            width: 100%;
+        }
+    }
+
+    &__list {
+        display: flex;
+
+        &>li {
+            margin-right: 43px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 15px;
+                color: $black;
+            }
+        }
+    }
+
+    &-info {
+        display: flex;
+        align-items: center;
+
+        &__socials {
+            margin-right: 25px;
+        }
+    }
+}
+
+.products {
+    &-item {
+        display: flex;
+        margin-bottom: 33px;
+
+        &__description {
+            flex: 0 0 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__images {
+            flex: 0 0 50%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .product {
+        &__title {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 31px;
+            margin-bottom: 22px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+            margin-bottom: 22px;
+        }
+
+        &__downloads {
+            display: flex;
+            margin-bottom: 32px;
+
+            &>button {
+                width: 46px;
+                min-height: 46px;
+                padding: 0;
+
+                &:first-child {
+                    margin-right: 12px;
+                }
+            }
+        }
+
+        &__link {
+            color: $primary;
+            font-weight: bold;
+            font-size: 17px;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
