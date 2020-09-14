@@ -2,7 +2,7 @@
 @import "./fonts.scss";
 
 body {
-    font-family: "Gotham Pro", sans-serif;
+    font-family: "Gotham Pro Reg", sans-serif;
     color: $black;
 }
 
@@ -40,13 +40,44 @@ button {
     border-radius: 12px;
     color: #fff;
     min-height: 56px;
+    transition: background 0.17s ease;
 
     &.btn-primary {
         background: $btn-primary;
+
+        &:hover {
+            background: $btn-primary-hover;
+        }
+
+        &:active {
+            background: $btn-primary-active;
+        }
     }
 
     &.btn-secondary {
         background: $btn-secondary;
+
+        &:hover {
+            background: $btn-secondary-hover;
+        }
+
+        &:active {
+            background: $btn-secondary-active;
+        }
+    }
+
+    &.btn-lg {
+        max-width: 365px;
+        width: 100%;
+    }
+}
+
+.section {
+    &__title {
+        font-family: Gotham Pro Bol;
+        font-size: 45px;
+        color: #000;
+        margin-bottom: 35px;
     }
 }
 
@@ -80,7 +111,7 @@ button {
             }
 
             a {
-                font-weight: bold;
+                font-family: Gotham Pro Bol;
                 font-size: 16px;
                 line-height: 15px;
                 color: #fff;
@@ -97,6 +128,14 @@ button {
             font-size: 17px;
             line-height: 16px;
             min-height: 48px;
+
+            &:hover {
+                background: $header-btn-hover;
+            }
+
+            &:active {
+                background: $header-btn-active;
+            }
 
             &:first-child {
                 margin-right: 15px;
@@ -117,7 +156,7 @@ button {
     }
 
     &__title {
-        font-weight: bold;
+        font-family: Gotham Pro Bol;
         font-size: 45px;
         line-height: 56px;
         color: #fff;
@@ -177,7 +216,7 @@ button {
             }
 
             a {
-                font-weight: bold;
+                font-family: Gotham Pro Bol;
                 font-size: 16px;
                 line-height: 15px;
                 color: $black;
@@ -195,16 +234,37 @@ button {
     }
 }
 
+.partners {
+    padding: 75px 0;
+
+    #partners-slider {
+        opacity: 0;
+        visibility: hidden;
+
+        &.tns-slider {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
 .products {
+    margin-bottom: 90px;
+
     &-item {
         display: flex;
         margin-bottom: 33px;
+
+        &:last-child {
+            margin-bottom: 72px;
+        }
 
         &__description {
             flex: 0 0 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            padding-right: 80px;
         }
 
         &__images {
@@ -216,9 +276,14 @@ button {
         }
     }
 
+    &-all {
+        display: flex;
+        justify-content: center;
+    }
+
     .product {
         &__title {
-            font-weight: bold;
+            font-family: Gotham Pro Bol;
             font-size: 32px;
             line-height: 31px;
             margin-bottom: 22px;
@@ -233,10 +298,13 @@ button {
             display: flex;
             margin-bottom: 32px;
 
-            &>button {
+            &>a {
                 width: 46px;
                 min-height: 46px;
                 padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 &:first-child {
                     margin-right: 12px;
@@ -246,13 +314,25 @@ button {
 
         &__link {
             color: $primary;
-            font-weight: bold;
+            font-family: Gotham Pro Bol;
             font-size: 17px;
             text-decoration: underline;
 
             &:hover {
                 text-decoration: none;
             }
+        }
+    }
+}
+
+.achievements {
+    &-item {
+        &__image {
+            margin-bottom: 54px;
+        }
+
+        &__description {
+            font-size: 18px;
         }
     }
 }

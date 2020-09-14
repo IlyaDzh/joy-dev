@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joy Dev</title>
+    <link rel="icon" href="img/logo-black.png">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/tiny-slider.js"></script>
 </head>
 
 <body>
@@ -15,7 +18,7 @@
         <div class="container">
             <div class="nav-wrapper">
                 <a href="#" class="nav__logo">
-                    <img src="img/logo.png" alt="Joy Dev logo">
+                    <img src="img/logo-light.png" alt="Joy Dev logo">
                 </a>
                 <ul class="nav__list">
                     <li><a href="#">Клиенты</a></li>
@@ -49,102 +52,154 @@
         </div>
     </header>
 
-    <section class="partners">
-        Scroll
+    <section class="section partners">
+        <div id="partners-slider">
+            <div><img src="img/partners/partner1.png" alt=""></div>
+            <div><img src="img/partners/partner2.png" alt=""></div>
+            <div><img src="img/partners/partner3.png" alt=""></div>
+            <div><img src="img/partners/partner4.png" alt=""></div>
+            <div><img src="img/partners/partner5.png" alt=""></div>
+            <div><img src="img/partners/partner1.png" alt=""></div>
+            <div><img src="img/partners/partner2.png" alt=""></div>
+            <div><img src="img/partners/partner3.png" alt=""></div>
+            <div><img src="img/partners/partner4.png" alt=""></div>
+            <div><img src="img/partners/partner5.png" alt=""></div>
+        </div>
     </section>
 
-    <section class="products">
+    <section class="section products">
         <div class="container">
-            <div class="products-item">
-                <div class="products-item__description">
-                    <div class="product__title">VR Симулятор</div>
-                    <div class="product__subtitle">
-                        Мы разработали VR-решение для иммерсивного образования! Теперь
-                        ученики смогут изучить в виртуальном мире, как правильно вести себя в чрезвычайной ситуации
+            <div class="products-list">
+                <div class="products-item">
+                    <div class="products-item__description">
+                        <div class="product__title">VR Симулятор</div>
+                        <div class="product__subtitle">
+                            Мы разработали VR-решение для иммерсивного образования! Теперь
+                            ученики смогут изучить в виртуальном мире, как правильно вести себя в чрезвычайной ситуации
+                        </div>
+                        <div class="product__downloads">
+                            <a href="#" class="btn btn-primary">
+                                <img src="img/android.png" alt="Android download">
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <img src="img/apple.png" alt="iOS download">
+                            </a>
+                        </div>
+                        <a href="#" class="product__link">Смотреть кейс</a>
                     </div>
-                    <div class="product__downloads">
-                        <button class="btn btn-primary">
-                            <img src="img/android.png" alt="Android download">
-                        </button>
-                        <button class="btn btn-primary">
-                            <img src="img/apple.png" alt="iOS download">
-                        </button>
+                    <div class="products-item__images">
+                        <img src="img/product.png" alt="Product">
                     </div>
-                    <a href="#" class="product__link">Смотреть кейс</a>
                 </div>
-                <div class="products-item__images">
-                    <img src="img/product.png" alt="Product">
+                <div class="products-item">
+                    <div class="products-item__description">
+                        <div class="product__title">VR Симулятор</div>
+                        <div class="product__subtitle">
+                            Мы разработали VR-решение для иммерсивного образования! Теперь
+                            ученики смогут изучить в виртуальном мире, как правильно вести себя в чрезвычайной ситуации
+                        </div>
+                        <div class="product__downloads">
+                            <a href="#" class="btn btn-primary">
+                                <img src="img/android.png" alt="Android download">
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <img src="img/apple.png" alt="iOS download">
+                            </a>
+                        </div>
+                        <a href="#" class="product__link">Смотреть кейс</a>
+                    </div>
+                    <div class="products-item__images">
+                        <img src="img/product.png" alt="Product">
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="products-item__description">
+                        <div class="product__title">VR Симулятор</div>
+                        <div class="product__subtitle">
+                            Мы разработали VR-решение для иммерсивного образования! Теперь
+                            ученики смогут изучить в виртуальном мире, как правильно вести себя в чрезвычайной ситуации
+                        </div>
+                        <div class="product__downloads">
+                            <a href="#" class="btn btn-primary">
+                                <img src="img/android.png" alt="Android download">
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <img src="img/apple.png" alt="iOS download">
+                            </a>
+                        </div>
+                        <a href="#" class="product__link">Смотреть кейс</a>
+                    </div>
+                    <div class="products-item__images">
+                        <img src="img/product.png" alt="Product">
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="products-item__description">
+                        <div class="product__title">VR Симулятор</div>
+                        <div class="product__subtitle">
+                            Мы разработали VR-решение для иммерсивного образования! Теперь
+                            ученики смогут изучить в виртуальном мире, как правильно вести себя в чрезвычайной ситуации
+                        </div>
+                        <div class="product__downloads">
+                            <a href="#" class="btn btn-primary">
+                                <img src="img/android.png" alt="Android download">
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <img src="img/apple.png" alt="iOS download">
+                            </a>
+                        </div>
+                        <a href="#" class="product__link">Смотреть кейс</a>
+                    </div>
+                    <div class="products-item__images">
+                        <img src="img/product.png" alt="Product">
+                    </div>
                 </div>
             </div>
-            <div class="products-item">
-                <div class="products-item__description">
-                    <div class="product__title">VR Симулятор</div>
-                    <div class="product__subtitle">
-                        Мы разработали VR-решение для иммерсивного образования! Теперь
-                        ученики смогут изучить в виртуальном мире, как правильно вести себя в чрезвычайной ситуации
-                    </div>
-                    <div class="product__downloads">
-                        <button class="btn btn-primary">
-                            <img src="img/android.png" alt="Android download">
-                        </button>
-                        <button class="btn btn-primary">
-                            <img src="img/apple.png" alt="iOS download">
-                        </button>
-                    </div>
-                    <a href="#" class="product__link">Смотреть кейс</a>
-                </div>
-                <div class="products-item__images">
-                    <img src="img/product.png" alt="Product">
-                </div>
-            </div>
-            <div class="products-item">
-                <div class="products-item__description">
-                    <div class="product__title">VR Симулятор</div>
-                    <div class="product__subtitle">
-                        Мы разработали VR-решение для иммерсивного образования! Теперь
-                        ученики смогут изучить в виртуальном мире, как правильно вести себя в чрезвычайной ситуации
-                    </div>
-                    <div class="product__downloads">
-                        <button class="btn btn-primary">
-                            <img src="img/android.png" alt="Android download">
-                        </button>
-                        <button class="btn btn-primary">
-                            <img src="img/apple.png" alt="iOS download">
-                        </button>
-                    </div>
-                    <a href="#" class="product__link">Смотреть кейс</a>
-                </div>
-                <div class="products-item__images">
-                    <img src="img/product.png" alt="Product">
-                </div>
-            </div>
-            <div class="products-item">
-                <div class="products-item__description">
-                    <div class="product__title">VR Симулятор</div>
-                    <div class="product__subtitle">
-                        Мы разработали VR-решение для иммерсивного образования! Теперь
-                        ученики смогут изучить в виртуальном мире, как правильно вести себя в чрезвычайной ситуации
-                    </div>
-                    <div class="product__downloads">
-                        <button class="btn btn-primary">
-                            <img src="img/android.png" alt="Android download">
-                        </button>
-                        <button class="btn btn-primary">
-                            <img src="img/apple.png" alt="iOS download">
-                        </button>
-                    </div>
-                    <a href="#" class="product__link">Смотреть кейс</a>
-                </div>
-                <div class="products-item__images">
-                    <img src="img/product.png" alt="Product">
-                </div>
+            <div class="products-all">
+                <button class="btn btn-primary btn-lg">Еще работы</button>
             </div>
         </div>
     </section>
 
-    <section class="achievements">
+    <section class="section achievements">
         <div class="container">
-            Achievements
+            <div class="section__title">
+                Достижения
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3 achievements-item">
+                    <div class="achievements-item__image">
+                        <img src="img/achievements/achievement1.png" alt="Achievement">
+                    </div>
+                    <p class="achievements-item__description">
+                        Доверенный фичеринг в App Store
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-3 achievements-item">
+                    <div class="achievements-item__image">
+                        <img src="img/achievements/achievement2.png" alt="Achievement">
+                    </div>
+                    <p class="achievements-item__description">
+                        Более 1 000 000 пользователей
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-3 achievements-item">
+                    <div class="achievements-item__image">
+                        <img src="img/achievements/achievement3.png" alt="Achievement">
+                    </div>
+                    <p class="achievements-item__description">
+                        Разрабатываем государственные заказы
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-3 achievements-item">
+                    <div class="achievements-item__image">
+                        <img src="img/achievements/achievement4.png" alt="Achievement">
+                    </div>
+                    <p class="achievements-item__description">
+                        5 разработанных приложений для банков
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -152,7 +207,7 @@
         <div class="container">
             <div class="footer-wrapper">
                 <a href="#" class="footer__logo">
-                    <img src="img/footer-logo.png" alt="Joy Dev logo">
+                    <img src="img/logo-black.png" alt="Joy Dev logo">
                 </a>
                 <ul class="footer__list">
                     <li><a href="#">Клиенты</a></li>
@@ -163,12 +218,12 @@
                 </ul>
                 <div class="footer-info">
                     <div class="footer-info__socials">
-                        <a href="#"><img src="img/social/clutch.png" alt="Clutch"></a>
-                        <a href="#"><img src="img/social/reddit.png" alt="Reddit"></a>
-                        <a href="#"><img src="img/social/behance.png" alt="Behance"></a>
-                        <a href="#"><img src="img/social/medium.png" alt="Medium"></a>
-                        <a href="#"><img src="img/social/twitter.png" alt="Twitter"></a>
-                        <a href="#"><img src="img/social/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="img/socials/clutch.png" alt="Clutch"></a>
+                        <a href="#"><img src="img/socials/reddit.png" alt="Reddit"></a>
+                        <a href="#"><img src="img/socials/behance.png" alt="Behance"></a>
+                        <a href="#"><img src="img/socials/medium.png" alt="Medium"></a>
+                        <a href="#"><img src="img/socials/twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="img/socials/facebook.png" alt="Facebook"></a>
                     </div>
                     <div class="footer-info__copyright">© 2008–2020 JoyDev</div>
                 </div>
@@ -176,5 +231,22 @@
         </div>
     </footer>
 </body>
+
+<script>
+    const slider = tns({
+        container: '#partners-slider',
+        autoWidth: true,
+        autoplay: true,
+        gutter: 50,
+        controls: false,
+        nav: false,
+        loop: true,
+        autoplayButtonOutput: false,
+        mouseDrag: true,
+        speed: 400,
+        edgePadding: 30,
+        preventScrollOnTouch: true
+    });
+</script>
 
 </html>

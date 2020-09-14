@@ -1,6 +1,12 @@
 $header-bg: #4c1dd2;
 $header-btn: #5826e4;
+$header-btn-hover: lighten(#5826e4, 5%);
+$header-btn-active: lighten(#5826e4, 10%);
 $btn-primary: #4c1dd2;
+$btn-primary-hover: darken(#4c1dd2, 5%);
+$btn-primary-active: darken(#4c1dd2, 10%);
 $btn-secondary: #f86161;
+$btn-secondary-hover: darken(#f86161, 5%);
+$btn-secondary-active: darken(#f86161, 10%);
 $black: #121b30;
 $primary: #4c1dd2;
