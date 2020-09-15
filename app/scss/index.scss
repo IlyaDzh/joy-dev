@@ -2,10 +2,12 @@
 @import "./fonts.scss";
 
 body {
-    font-family: "Gotham Pro Reg", sans-serif;
+    font-family: "Gotham Pro Regular", sans-serif;
     color: $black;
+    overflow-x: hidden;
 }
 
+p,
 h1,
 h2,
 h3,
@@ -72,9 +74,20 @@ button {
     }
 }
 
+a.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
 .section {
     &__title {
-        font-family: Gotham Pro Bol;
+        font-family: Gotham Pro Bold;
         font-size: 45px;
         color: #000;
         margin-bottom: 35px;
@@ -111,7 +124,7 @@ button {
             }
 
             a {
-                font-family: Gotham Pro Bol;
+                font-family: Gotham Pro Bold;
                 font-size: 16px;
                 line-height: 15px;
                 color: #fff;
@@ -156,7 +169,7 @@ button {
     }
 
     &__title {
-        font-family: Gotham Pro Bol;
+        font-family: Gotham Pro Bold;
         font-size: 45px;
         line-height: 56px;
         color: #fff;
@@ -166,6 +179,7 @@ button {
     &__subtitle {
         font-size: 20px;
         color: #fff;
+        margin-bottom: 46px;
     }
 
     &-contact {
@@ -216,7 +230,7 @@ button {
             }
 
             a {
-                font-family: Gotham Pro Bol;
+                font-family: Gotham Pro Bold;
                 font-size: 16px;
                 line-height: 15px;
                 color: $black;
@@ -283,7 +297,7 @@ button {
 
     .product {
         &__title {
-            font-family: Gotham Pro Bol;
+            font-family: Gotham Pro Bold;
             font-size: 32px;
             line-height: 31px;
             margin-bottom: 22px;
@@ -302,9 +316,6 @@ button {
                 width: 46px;
                 min-height: 46px;
                 padding: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
 
                 &:first-child {
                     margin-right: 12px;
@@ -314,7 +325,7 @@ button {
 
         &__link {
             color: $primary;
-            font-family: Gotham Pro Bol;
+            font-family: Gotham Pro Bold;
             font-size: 17px;
             text-decoration: underline;
 
@@ -326,6 +337,8 @@ button {
 }
 
 .achievements {
+    margin-bottom: 100px;
+
     &-item {
         &__image {
             margin-bottom: 54px;
@@ -334,6 +347,150 @@ button {
         &__description {
             font-size: 18px;
         }
+    }
+}
+
+.services {
+    margin-bottom: 98px;
+
+    &-item {
+        background: $services-bg;
+        border-radius: 22px;
+        padding: 78px 78px 69px;
+        display: flex;
+        margin-bottom: 31px;
+
+        &__left {
+            max-width: 660px;
+            width: 100%;
+            z-index: 1;
+        }
+
+        &__right {
+            position: relative;
+        }
+
+        &__title {
+            font-family: Gotham Pro Bold;
+            font-size: 45px;
+            margin-bottom: 30px;
+        }
+
+        &__tags {
+            display: flex;
+            margin-bottom: 30px;
+
+            .tags-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 42px;
+                border-radius: 8px;
+                background: #fff;
+                margin-right: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 7px 30px;
+            }
+        }
+
+        &__description {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        &__image {
+            position: absolute;
+
+            &--mobile {
+                top: -128px;
+                left: -135px;
+            }
+
+            &--web {
+                top: -70px;
+                left: -89px;
+            }
+        }
+    }
+}
+
+.experience {
+    margin-bottom: 87px;
+    
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+
+        .section__title {
+            margin-bottom: 0;
+        }
+
+        &__controls {
+            display: flex;
+            align-items: center;
+
+            & > button {
+                padding: 8px;
+                background: none;
+            }
+
+            #experience-slider-prev {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    #experience-slider {
+        opacity: 0;
+        visibility: hidden;
+
+        &-mw {
+            margin-top: -18px;
+        }
+
+        &.tns-slider {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &-slider {
+        margin-bottom: 50px;
+
+        &__item {
+            max-width: 268px;
+
+            &--lg {
+                max-width: 568px;
+            }
+
+            &__image {
+                border-radius: 17px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 28px;
+            }
+
+            &__description {
+                color: $black;
+                width: 90%;
+                font-size: 18px;
+                font-weight: bold;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    &-all {
+        display: flex;
+        justify-content: center;
     }
 }
 
