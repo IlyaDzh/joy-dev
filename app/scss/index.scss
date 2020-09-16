@@ -96,7 +96,6 @@ a.btn {
     color: #fff;
     border-bottom: 1px solid #585C65;
     padding: 14px 16px 14px 2px;
-    margin-bottom: 20px;
 
     &::placeholder {
         color: #838997;
@@ -104,6 +103,7 @@ a.btn {
 
     &-wrapper {
         position: relative;
+        margin-bottom: 20px;
 
         .input-validation {
             position: absolute;
@@ -124,11 +124,63 @@ a.btn {
 }
 
 .section {
+    &>.container {
+        position: relative;
+    }
+
     &__title {
         font-family: Gotham Pro Bold;
         font-size: 45px;
         color: #000;
         margin-bottom: 35px;
+    }
+}
+
+.breadcrumbs {
+    margin-bottom: 30px;
+    padding-top: 57px;
+
+    &-content {
+        display: flex;
+    }
+
+    &__item {
+        font-size: 16px;
+        background: $breadcrumbs-bg;
+        padding: 4px 16px;
+        border-radius: 7px;
+        margin-right: 13px;
+        color: $text-black;
+
+        &:hover {
+            color: $text-black;
+            text-decoration: none;
+        }
+
+        &:last-child {
+            color: $text-primary;
+        }
+    }
+
+    &__images {
+        &>div {
+            position: absolute;
+        }
+
+        #star1 {
+            top: 19px;
+            left: -54px;
+        }
+
+        #star2 {
+            right: 45px;
+            top: 33px;
+        }
+
+        #star3 {
+            right: 0px;
+            top: 68px;
+        }
     }
 }
 
@@ -343,6 +395,10 @@ a.btn {
 
 .products {
     margin-bottom: 90px;
+
+    &-cases {
+        margin-bottom: 22px;
+    }
 
     &-item {
         display: flex;
@@ -590,8 +646,11 @@ a.btn {
         margin-bottom: 62px;
     }
 
+    &-sides {
+        display: flex;
+    }
+
     &-left {
-        width: 224px;
         margin-right: 77px;
     }
 
@@ -601,6 +660,11 @@ a.btn {
 
     &__avatar {
         margin-bottom: 21px;
+        width: 224px;
+
+        &>img {
+            width: 100%;
+        }
     }
 
     &__name {
@@ -623,6 +687,17 @@ a.btn {
     }
 
     &-form {
+        &__inputs-wrapper {
+            .input-wrapper:last-child {
+                margin-bottom: 60px;
+            }
+        }
+
+        &__button-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
         &__caption {
             font-size: 16px;
             color: #656e81;
@@ -758,5 +833,153 @@ a.btn {
                 margin-bottom: 5px;
             }
         }
+    }
+}
+
+@media (max-width: 991px) {
+    .input {
+        font-size: 14px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 18px;
+        min-height: 44px;
+    }
+
+    .container {
+        max-width: unset;
+    }
+
+    .experience {
+        margin-bottom: 45px;
+
+        &-header {
+            margin-bottom: 26px;
+            display: block;
+            text-align: center;
+
+            .section__title {
+                font-size: 20px;
+            }
+
+            &__controls {
+                display: none;
+            }
+        }
+
+        &-slider {
+            margin-bottom: 26px;
+
+            &__item {
+                max-width: 183px;
+
+                &__image {
+                    height: 246px;
+                    margin-bottom: 19px;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                &__description {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .contact {
+        .container {
+            padding: 0;
+        }
+
+        &-wrapper {
+            padding: 37px 17px 41px;
+        }
+
+        &-left {
+            margin-right: unset;
+            text-align: center;
+        }
+
+        &-right {
+            margin-bottom: 33px;
+        }
+
+        &-wrapper {
+            border-radius: 0;
+        }
+
+        &__title {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        &-sides {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &-form {
+            &__inputs-wrapper {
+                .input-wrapper:last-child {
+                    margin-bottom: 42px;
+                }
+            }
+
+            &__button {
+                max-width: unset !important;
+                width: 100% !important;
+                margin-bottom: 16px;
+
+                &-wrapper {
+                    display: block;
+                }
+            }
+
+            &__caption {
+                text-align: center;
+                font-size: 13px;
+            }
+        }
+
+        &__avatar {
+            width: 66px;
+            height: 66px;
+            margin: 0 auto 24px;
+        }
+
+        &__name {
+            font-size: 16px;
+            margin-bottom: 11px;
+        }
+
+        &__occupation {
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        &__info {
+            font-size: 15px;
+        }
+
+        &__dots {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .btn {
+        max-width: unset !important;
     }
 }

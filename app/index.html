@@ -18,12 +18,12 @@
     <nav class="nav">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="#" class="nav__logo">
+                <a href="index.html" class="nav__logo">
                     <img src="img/logo-light.png" alt="Joy Dev logo">
                 </a>
                 <ul class="nav__list">
                     <li><a href="#">Клиенты</a></li>
-                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="cases.html">Кейсы</a></li>
                     <li><a href="#">Услуги</a></li>
                     <li><a href="#">Блог</a></li>
                     <li><a href="#">Контакты</a></li>
@@ -172,6 +172,7 @@
             </div>
             <div class="products-all">
                 <a href="#" class="btn btn-primary btn-lg">Еще работы</a>
+                <!-- <button class="btn btn-primary btn-lg">Еще работы</button> -->
             </div>
         </div>
     </section>
@@ -230,7 +231,8 @@
                         Наши профессиональные разработчики iOS и Android создают высококачественный продукт, который
                         будет оптимизировать задачи вашего бизнеса и способствовать увеличению вашей прибыли
                     </p>
-                    <button class="btn btn-secondary btn-lg">Получить оценку</button>
+                    <a href="#" class="btn btn-secondary btn-lg">Получить оценку</a>
+                    <!-- <button class="btn btn-secondary btn-lg">Получить оценку</button> -->
                 </div>
                 <div class="services-item__right">
                     <div class="services-item__image services-item__image--mobile">
@@ -251,7 +253,8 @@
                         Команда наших специалистов создает функционально сложные, интеграционные и высоконагруженные
                         проекты. Имеет большой опыт создания сайтов и сервисов, интернет-магазинов и лендингов
                     </p>
-                    <button class="btn btn-secondary btn-lg">Получить оценку</button>
+                    <a href="#" class="btn btn-secondary btn-lg">Получить оценку</a>
+                    <!-- <button class="btn btn-secondary btn-lg">Получить оценку</button> -->
                 </div>
                 <div class="services-item__right">
                     <div class="services-item__image services-item__image--web">
@@ -339,7 +342,7 @@
                     <img class="right-dots" src="img/contact/dots.png" alt="">
                 </div>
                 <div class="contact__title">Давайте вместе создадим крутой проект!</div>
-                <div class="d-flex">
+                <div class="contact-sides">
                     <div class="contact-left">
                         <div class="contact__avatar">
                             <img src="img/contact/sales-manager.png" alt="">
@@ -354,34 +357,37 @@
                     </div>
                     <div class="contact-right">
                         <form action="" method="POST" class="contact-form">
-                            <div class="input-wrapper">
-                                <span class="input-validation input-validation--red"></span>
-                                <input class="input" id="fullname" placeholder="Имя"
-                                    oninput="handleInputChange('fullname')" required>
+                            <div class="contact-form__inputs-wrapper">
+                                <div class="input-wrapper">
+                                    <span class="input-validation input-validation--red"></span>
+                                    <input class="input" id="fullname" placeholder="Имя"
+                                        oninput="handleInputChange('fullname')" required>
+                                </div>
+                                <div class="input-wrapper">
+                                    <span class="input-validation input-validation--red"></span>
+                                    <input class="input" id="email" type="email" placeholder="E-mail"
+                                        oninput="handleInputChange('email')" required>
+                                </div>
+                                <div class="input-wrapper">
+                                    <span class="input-validation input-validation--red"></span>
+                                    <input class="input" id="number" placeholder="Телефон"
+                                        oninput="handleInputChange('number')" required>
+                                </div>
+                                <div class="input-wrapper">
+                                    <span class="input-validation input-validation--red"></span>
+                                    <input class="input" id="company_name" placeholder="Название компании"
+                                        oninput="handleInputChange('company_name')" required>
+                                </div>
+                                <div class="input-wrapper">
+                                    <span class="input-validation input-validation--red"></span>
+                                    <input class="input" id="about_project" placeholder="Пара слов о проекте"
+                                        oninput="handleInputChange('about_project')" required>
+                                </div>
                             </div>
-                            <div class="input-wrapper">
-                                <span class="input-validation input-validation--red"></span>
-                                <input class="input" id="email" type="email" placeholder="E-mail"
-                                    oninput="handleInputChange('email')" required>
-                            </div>
-                            <div class="input-wrapper">
-                                <span class="input-validation input-validation--red"></span>
-                                <input class="input" id="number" placeholder="Телефон"
-                                    oninput="handleInputChange('number')" required>
-                            </div>
-                            <div class="input-wrapper">
-                                <span class="input-validation input-validation--red"></span>
-                                <input class="input" id="company_name" placeholder="Название компании"
-                                    oninput="handleInputChange('company_name')" required>
-                            </div>
-                            <div class="input-wrapper">
-                                <span class="input-validation input-validation--red"></span>
-                                <input class="input" style="margin-bottom: 60px;" id="about_project"
-                                    placeholder="Пара слов о проекте" oninput="handleInputChange('about_project')"
-                                    required>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <button class="btn btn-secondary btn-lg" type="submit">Отправить</button>
+                            <div class="contact-form__button-wrapper">
+                                <button class="btn btn-secondary btn-lg contact-form__button" type="submit">
+                                    Отправить
+                                </button>
                                 <p class="contact-form__caption">
                                     Нажимая на кнопку, вы соглашаетесь c политикой конфиденциальности
                                 </p>
@@ -396,12 +402,12 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <a href="#" class="footer__logo">
+                <a href="index.html" class="footer__logo">
                     <img src="img/logo-black.png" alt="Joy Dev logo">
                 </a>
                 <ul class="footer__list">
                     <li><a href="#">Клиенты</a></li>
-                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="cases.html">Кейсы</a></li>
                     <li><a href="#">Услуги</a></li>
                     <li><a href="#">Блог</a></li>
                     <li><a href="#">Контакты</a></li>
