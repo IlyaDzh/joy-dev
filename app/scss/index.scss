@@ -473,6 +473,8 @@ a.btn {
 
             &__image {
                 position: relative;
+                border-radius: 17px;
+                overflow: hidden;
 
                 &__caption {
                     position: absolute;
