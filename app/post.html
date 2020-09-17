@@ -8,7 +8,9 @@
     <link rel="icon" href="img/logo-black.png">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/tiny-slider.js"></script>
 </head>
 
 <body>
@@ -33,12 +35,13 @@
         </div>
     </nav>
 
-    <section class="section products products-cases">
+    <section class="section post">
         <div class="container">
             <div class="breadcrumbs">
                 <div class="breadcrumbs-content">
                     <a href="index.html" class="breadcrumbs__item">Главная</a>
-                    <div class="breadcrumbs__item">Кейсы</div>
+                    <a href="blog.html" class="breadcrumbs__item">Блог</a>
+                    <div class="breadcrumbs__item">Как дополненная реальность помогает создавать комфорт в доме</div>
                 </div>
                 <div class="breadcrumbs__images">
                     <div id="star1">
@@ -52,96 +55,68 @@
                     </div>
                 </div>
             </div>
-            <div class="section__title">Кейсы</div>
-            <div class="products-list">
-                <div class="products-item">
-                    <div class="products-item__description">
-                        <div class="product__title">VR Симулятор</div>
-                        <p class="product__subtitle">
-                            Мы разработали VR-решение для иммерсивного образования! Теперь
-                            ученики смогут изучить в виртуальном мире, как правильно вести себя в чрезвычайной ситуации
-                        </p>
-                        <div class="product__downloads">
-                            <a href="#" class="btn btn-primary">
-                                <img src="img/products/android.png" alt="Android download">
-                            </a>
-                            <a href="#" class="btn btn-primary">
-                                <img src="img/products/apple.png" alt="iOS download">
-                            </a>
-                        </div>
-                        <a href="#" class="product__link">Смотреть кейс</a>
-                    </div>
-                    <div class="products-item__images">
-                        <img src="img/products/product.png" alt="Product">
-                    </div>
+            <div class="section__title">
+                Как дополненная реальность помогает создавать комфорт в доме
+            </div>
+            <div class="post-slider">
+                <div class="post-slider__controls">
+                    <button id="post-slider-prev">
+                        <img src="img/post/left-arrow.svg" alt="">
+                    </button>
+                    <button id="post-slider-next">
+                        <img src="img/post/right-arrow.svg" alt="">
+                    </button>
                 </div>
-                <div class="products-item">
-                    <div class="products-item__description">
-                        <div class="product__title">VR Симулятор</div>
-                        <p class="product__subtitle">
-                            Мы разработали VR-решение для иммерсивного образования! Теперь
-                            ученики смогут изучить в виртуальном мире, как правильно вести себя в чрезвычайной ситуации
-                        </p>
-                        <div class="product__downloads">
-                            <a href="#" class="btn btn-primary">
-                                <img src="img/products/android.png" alt="Android download">
-                            </a>
-                            <a href="#" class="btn btn-primary">
-                                <img src="img/products/apple.png" alt="iOS download">
-                            </a>
-                        </div>
-                        <a href="#" class="product__link">Смотреть кейс</a>
+                <div id="post-slider">
+                    <div>
+                        <img src="img/post/post-main.png" alt="">
                     </div>
-                    <div class="products-item__images">
-                        <img src="img/products/product.png" alt="Product">
+                    <div>
+                        <img src="img/post/post-main.png" alt="">
                     </div>
-                </div>
-                <div class="products-item">
-                    <div class="products-item__description">
-                        <div class="product__title">VR Симулятор</div>
-                        <p class="product__subtitle">
-                            Мы разработали VR-решение для иммерсивного образования! Теперь
-                            ученики смогут изучить в виртуальном мире, как правильно вести себя в чрезвычайной ситуации
-                        </p>
-                        <div class="product__downloads">
-                            <a href="#" class="btn btn-primary">
-                                <img src="img/products/android.png" alt="Android download">
-                            </a>
-                            <a href="#" class="btn btn-primary">
-                                <img src="img/products/apple.png" alt="iOS download">
-                            </a>
-                        </div>
-                        <a href="#" class="product__link">Смотреть кейс</a>
-                    </div>
-                    <div class="products-item__images">
-                        <img src="img/products/product.png" alt="Product">
-                    </div>
-                </div>
-                <div class="products-item">
-                    <div class="products-item__description">
-                        <div class="product__title">VR Симулятор</div>
-                        <p class="product__subtitle">
-                            Мы разработали VR-решение для иммерсивного образования! Теперь
-                            ученики смогут изучить в виртуальном мире, как правильно вести себя в чрезвычайной ситуации
-                        </p>
-                        <div class="product__downloads">
-                            <a href="#" class="btn btn-primary">
-                                <img src="img/products/android.png" alt="Android download">
-                            </a>
-                            <a href="#" class="btn btn-primary">
-                                <img src="img/products/apple.png" alt="iOS download">
-                            </a>
-                        </div>
-                        <a href="#" class="product__link">Смотреть кейс</a>
-                    </div>
-                    <div class="products-item__images">
-                        <img src="img/products/product.png" alt="Product">
+                    <div>
+                        <img src="img/post/post-main.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="products-all">
-                <a href="#" class="btn btn-primary btn-lg">Еще работы</a>
-                <!-- <button class="btn btn-primary btn-lg">Еще работы</button> -->
+            <div class="post-content">
+                <p class="post-content__paragraph">
+                    Идейные соображения высшего порядка, а также реализация намеченных плановых заданий обеспечивает
+                    широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении
+                    поставленных задач. Повседневная практика показывает, что рамки и место обучения кадров играет
+                    важную роль в формировании форм развития. Повседневная практика показывает, что укрепление и
+                    развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем
+                    массового участия. Значимость этих проблем настолько очевидна, что консультация с широким активом в
+                    значительной степени обуславливает создание новых предложений.
+                </p>
+                <p class="post-content__paragraph">
+                    Повседневная практика показывает, что рамки и место обучения кадров играет важную роль в
+                    формировании модели развития. Равным образом начало повседневной работы по формированию позиции
+                    представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении
+                    поставленных задач
+                </p>
+            </div>
+            <div class="post-footer">
+                <div class="post-footer__title">Как дополненная реальность помогает создавать комфорт в доме:</div>
+                <div class="post-footer__sides">
+                    <div class="left-side">
+                        <div class="post-footer__image">
+                            <img src="img/post/post-footer.png" alt="">
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul class="post-footer-list">
+                            <li class="post-footer-list__item">Повседневная практика показывает</li>
+                            <li class="post-footer-list__item">Что рамки и место обучения кадров</li>
+                            <li class="post-footer-list__item">Играет важную роль в формировании</li>
+                            <li class="post-footer-list__item">Модели развития</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="post-footer__actions">
+                    <a href="post.html" class="btn btn-primary btn-lg">Предыдущая статья</a>
+                    <a href="post.html" class="btn btn-secondary btn-lg">Следующая статья</a>
+                </div>
             </div>
         </div>
     </section>
@@ -224,7 +199,21 @@
             </div>
         </div>
     </div>
-    
+
+    <script>
+        const experienceSlider = tns({
+            container: "#post-slider",
+            prevButton: "#post-slider-prev",
+            nextButton: "#post-slider-next",
+            mode: "gallery",
+            items: 1,
+            controls: true,
+            nav: false,
+            loop: true,
+            speed: 700
+        });
+    </script>
+
     <script src="js/modal.js"></script>
 </body>
 

@@ -22,14 +22,14 @@
                     <img src="img/logo-light.png" alt="Joy Dev logo">
                 </a>
                 <ul class="nav__list">
-                    <li><a href="#">Клиенты</a></li>
+                    <li><a href="index.html#partners">Клиенты</a></li>
                     <li><a href="cases.html">Кейсы</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Блог</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="index.html#services">Услуги</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
                 </ul>
                 <div class="nav-actions">
-                    <button class="btn nav-actions__btn">Заказать звонок</button>
+                    <button class="btn nav-actions__btn" id="call-btn">Заказать звонок</button>
                     <button class="btn nav-actions__btn">Ru</button>
                 </div>
             </div>
@@ -44,11 +44,18 @@
                     Мы создаем высококачественные мобильные </br>
                     и веб-приложения для решения ваших бизнес-задач.
                 </p>
-                <div class="header-contact">
-                    <input type="text" class="header-contact__input flag" value="+7">
-                    <input type="text" class="header-contact__input" value="995-336-3617">
-                    <button class="btn btn-secondary header-contact__button">Реализовать мою идею</button>
-                </div>
+                <form action="" method="POST" class="header-contact">
+                    <div class="header-contact__input-wrapper">
+                        <div class="header-contact__input__flag">
+                            <img src="img/header/ru.png" alt="ru">
+                        </div>
+                        <input type="text" class="header-contact__input" placeholder="+7" value="+7">
+                    </div>
+                    <input type="text" class="header-contact__input" placeholder="999-999-9999" value="995-336-3617">
+                    <button class="btn btn-secondary header-contact__button" type="submit">
+                        Реализовать мою идею
+                    </button>
+                </form>
             </div>
             <div class="header__images">
                 <div id="header-man">
@@ -67,7 +74,7 @@
         </div>
     </header>
 
-    <section class="section partners">
+    <section id="partners" class="section partners">
         <div id="partners-slider">
             <div><img src="img/partners/partner1.png" alt=""></div>
             <div><img src="img/partners/partner2.png" alt=""></div>
@@ -171,7 +178,7 @@
                 </div>
             </div>
             <div class="products-all">
-                <a href="#" class="btn btn-primary btn-lg">Еще работы</a>
+                <a href="cases.html" class="btn btn-primary btn-lg">Еще работы</a>
                 <!-- <button class="btn btn-primary btn-lg">Еще работы</button> -->
             </div>
         </div>
@@ -217,7 +224,7 @@
         </div>
     </section>
 
-    <section class="section services">
+    <section id="services" class="section services">
         <div class="container">
             <div class="services-item">
                 <div class="services-item__left services-item__left--mobile">
@@ -282,10 +289,10 @@
 
                 <div>
                     <div class="experience-slider__item experience-slider__item--lg">
-                        <a href="#" class="experience-slider__item__image">
+                        <a href="post.html" class="experience-slider__item__image">
                             <img src="img/experience/experience1.jpg" alt="">
                         </a>
-                        <a href="#" class="experience-slider__item__description">
+                        <a href="post.html" class="experience-slider__item__description">
                             Как дополненная реальность помогает создавать комфорт в доме
                         </a>
                     </div>
@@ -293,10 +300,10 @@
 
                 <div>
                     <div class="experience-slider__item">
-                        <a href="#" class="experience-slider__item__image">
+                        <a href="post.html" class="experience-slider__item__image">
                             <img src="img/experience/experience2.jpg" alt="">
                         </a>
-                        <a href="#" class="experience-slider__item__description">
+                        <a href="post.html" class="experience-slider__item__description">
                             Разработка приложения для туризма
                         </a>
                     </div>
@@ -304,10 +311,10 @@
 
                 <div>
                     <div class="experience-slider__item">
-                        <a href="#" class="experience-slider__item__image">
+                        <a href="post.html" class="experience-slider__item__image">
                             <img src="img/experience/experience3.jpg" alt="">
                         </a>
-                        <a href="#" class="experience-slider__item__description">
+                        <a href="post.html" class="experience-slider__item__description">
                             Изучаем виджеты в iOS 14 и App Library
                         </a>
                     </div>
@@ -315,10 +322,10 @@
 
                 <div>
                     <div class="experience-slider__item">
-                        <a href="#" class="experience-slider__item__image ">
+                        <a href="post.html" class="experience-slider__item__image">
                             <img src="img/experience/experience3.jpg" alt="">
                         </a>
-                        <a href="#" class="experience-slider__item__description">
+                        <a href="post.html" class="experience-slider__item__description">
                             Изучаем виджеты в iOS 14 и App Library
                         </a>
                     </div>
@@ -326,7 +333,7 @@
 
             </div>
             <div class="experience-all">
-                <a href="#" class="btn btn-primary btn-lg">
+                <a href="blog.html" class="btn btn-primary btn-lg">
                     <img src="img/experience/eye.svg" style="margin-right: 16px;" alt="">
                     Еще статьи
                 </a>
@@ -334,7 +341,7 @@
         </div>
     </section>
 
-    <section class="section contact">
+    <section id="contacts" class="section contact">
         <div class="container">
             <div class="contact-wrapper">
                 <div class="contact__dots">
@@ -389,7 +396,8 @@
                                     Отправить
                                 </button>
                                 <p class="contact-form__caption">
-                                    Нажимая на кнопку, вы соглашаетесь c политикой конфиденциальности
+                                    Нажимая на кнопку, вы соглашаетесь c
+                                    <a href="privacy.html">политикой конфиденциальности</a>
                                 </p>
                             </div>
                         </form>
@@ -406,11 +414,11 @@
                     <img src="img/logo-black.png" alt="Joy Dev logo">
                 </a>
                 <ul class="footer__list">
-                    <li><a href="#">Клиенты</a></li>
+                    <li><a href="index.html#partners">Клиенты</a></li>
                     <li><a href="cases.html">Кейсы</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Блог</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="index.html#services">Услуги</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
                 </ul>
                 <div class="footer-info">
                     <div class="footer-info__socials">
@@ -438,34 +446,75 @@
             </div>
         </div>
     </footer>
-</body>
 
-<script>
-    const partnersSlider = tns({
-        container: "#partners-slider",
-        autoWidth: true,
-        autoplay: true,
-        gutter: 50,
-        controls: false,
-        nav: false,
-        loop: true,
-        autoplayButtonOutput: false,
-        mouseDrag: true,
-        speed: 400,
-        edgePadding: 30,
-        preventScrollOnTouch: true
-    });
-    const experienceSlider = tns({
-        container: "#experience-slider",
-        prevButton: "#experience-slider-prev",
-        nextButton: "#experience-slider-next",
-        autoWidth: true,
-        gutter: 32,
-        controls: true,
-        nav: false,
-        loop: true,
-        speed: 400
-    });
-</script>
+    <div class="modal" id="call-modal">
+        <div class="modal-content">
+            <h3 class="modal__title">Заказать звонок</h3>
+            <form action="" method="POST" class="modal-form">
+                <div class="modal-form__inputs">
+                    <div class="input-wrapper">
+                        <span class="input-validation input-validation--red"></span>
+                        <input class="input" id="modal-fullname" placeholder="Имя"
+                            oninput="handleInputChange('modal-fullname')" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <span class="input-validation input-validation--red"></span>
+                        <input class="input" id="modal-number" placeholder="Телефон"
+                            oninput="handleInputChange('modal-number')" required>
+                    </div>
+                </div>
+                <div class="modal-form__actions">
+                    <button class="btn btn-secondary btn-lg modal-form__button" id="call-close" type="submit">
+                        Заказать звонок
+                    </button>
+                    <p class="modal-form__caption">
+                        Нажимая на кнопку, вы соглашаетесь c <a href="privacy.html">политикой конфиденциальности</a>
+                    </p>
+                </div>
+            </form>
+            <div class="modal__images">
+                <div id="phone">
+                    <img src="img/modal/modal-phone.png" alt="">
+                </div>
+                <div id="blue-dots">
+                    <img src="img/modal/modal-blue-dots.png" alt="">
+                </div>
+                <div id="red-dots">
+                    <img src="img/modal/modal-red-dots.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const partnersSlider = tns({
+            container: "#partners-slider",
+            autoWidth: true,
+            autoplay: true,
+            gutter: 50,
+            controls: false,
+            nav: false,
+            loop: true,
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            speed: 400,
+            edgePadding: 30,
+            preventScrollOnTouch: true
+        });
+        const experienceSlider = tns({
+            container: "#experience-slider",
+            prevButton: "#experience-slider-prev",
+            nextButton: "#experience-slider-next",
+            autoWidth: true,
+            gutter: 32,
+            controls: true,
+            nav: false,
+            loop: true,
+            speed: 400
+        });
+    </script>
+
+    <script src="js/modal.js"></script>
+</body>
 
 </html>
