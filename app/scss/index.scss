@@ -441,8 +441,63 @@ a.btn {
             padding-right: 80px;
         }
 
-        &__images {
+        &__slider {
+            position: relative;
             flex: 0 0 50%;
+
+            .tns-nav {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                padding: 27px 29px;
+                z-index: 1;
+
+                button {
+                    width: 25%;
+                    height: 4px;
+                    background: #fff;
+                    margin-right: 9px;
+                    border-radius: 6px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &.tns-nav-active {
+                        background: #243d4d;
+                    }
+                }
+            }
+
+            &__image {
+                position: relative;
+
+                &__caption {
+                    position: absolute;
+                    left: 24px;
+                    bottom: 28px;
+                    width: 260px;
+                    color: #fff;
+
+                    &.caption--dark {
+                        color: $text-black;
+                    }
+
+                    h5 {
+                        font-family: Gotham Pro Bold;
+                        font-size: 18px;
+                        line-height: 17px;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+                }
+            }
 
             img {
                 width: 100%;
