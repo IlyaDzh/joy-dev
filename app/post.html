@@ -8,9 +8,11 @@
     <link rel="icon" href="img/logo-black.png">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/tiny-slider.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/input-validation.js"></script>
 </head>
 
@@ -59,66 +61,77 @@
             <h1 class="section__title">
                 Как дополненная реальность помогает создавать комфорт в доме
             </h1>
-            <div class="post-slider">
-                <div class="post-slider__controls">
-                    <button id="post-slider-prev">
-                        <img src="img/post/left-arrow.svg" alt="">
-                    </button>
-                    <button id="post-slider-next">
-                        <img src="img/post/right-arrow.svg" alt="">
-                    </button>
-                </div>
-                <div id="post-slider">
-                    <div>
-                        <img src="img/post/post-main.png" alt="">
+
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="post-slider">
+                    <div class="post-slider__controls">
+                        <button id="post-slider-prev">
+                            <img src="img/post/left-arrow.svg" alt="">
+                        </button>
+                        <button id="post-slider-next">
+                            <img src="img/post/right-arrow.svg" alt="">
+                        </button>
                     </div>
-                    <div>
-                        <img src="img/post/post-main.png" alt="">
-                    </div>
-                    <div>
-                        <img src="img/post/post-main.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="post-content">
-                <p class="post-content__paragraph">
-                    Идейные соображения высшего порядка, а также реализация намеченных плановых заданий обеспечивает
-                    широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении
-                    поставленных задач. Повседневная практика показывает, что рамки и место обучения кадров играет
-                    важную роль в формировании форм развития. Повседневная практика показывает, что укрепление и
-                    развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем
-                    массового участия. Значимость этих проблем настолько очевидна, что консультация с широким активом в
-                    значительной степени обуславливает создание новых предложений.
-                </p>
-                <p class="post-content__paragraph">
-                    Повседневная практика показывает, что рамки и место обучения кадров играет важную роль в
-                    формировании модели развития. Равным образом начало повседневной работы по формированию позиции
-                    представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении
-                    поставленных задач
-                </p>
-            </div>
-            <div class="post-footer">
-                <h3 class="post-footer__title">Как дополненная реальность помогает создавать комфорт в доме:</h3>
-                <div class="post-footer__sides">
-                    <div class="left-side">
-                        <div class="post-footer__image">
-                            <img src="img/post/post-footer.png" alt="">
+                    <div id="post-slider">
+                        <div>
+                            <img src="img/post/post-main.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/post/post-main.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/post/post-main.png" alt="">
                         </div>
                     </div>
-                    <div class="right-side">
-                        <ul class="post-footer-list">
-                            <li class="post-footer-list__item">Повседневная практика показывает</li>
-                            <li class="post-footer-list__item">Что рамки и место обучения кадров</li>
-                            <li class="post-footer-list__item">Играет важную роль в формировании</li>
-                            <li class="post-footer-list__item">Модели развития</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="post-footer__actions">
-                    <a href="post.html" class="btn btn-primary btn-lg">Предыдущая статья</a>
-                    <a href="post.html" class="btn btn-secondary btn-lg">Следующая статья</a>
                 </div>
             </div>
+
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="post-content">
+                    <p class="post-content__paragraph">
+                        Идейные соображения высшего порядка, а также реализация намеченных плановых заданий обеспечивает
+                        широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении
+                        поставленных задач. Повседневная практика показывает, что рамки и место обучения кадров играет
+                        важную роль в формировании форм развития. Повседневная практика показывает, что укрепление и
+                        развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем
+                        массового участия. Значимость этих проблем настолько очевидна, что консультация с широким
+                        активом в
+                        значительной степени обуславливает создание новых предложений.
+                    </p>
+                    <p class="post-content__paragraph">
+                        Повседневная практика показывает, что рамки и место обучения кадров играет важную роль в
+                        формировании модели развития. Равным образом начало повседневной работы по формированию позиции
+                        представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении
+                        поставленных задач
+                    </p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="post-footer">
+                    <h3 class="post-footer__title">Как дополненная реальность помогает создавать комфорт в доме:</h3>
+                    <div class="post-footer__sides">
+                        <div class="left-side">
+                            <div class="post-footer__image">
+                                <img src="img/post/post-footer.png" alt="">
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <ul class="post-footer-list">
+                                <li class="post-footer-list__item">Повседневная практика показывает</li>
+                                <li class="post-footer-list__item">Что рамки и место обучения кадров</li>
+                                <li class="post-footer-list__item">Играет важную роль в формировании</li>
+                                <li class="post-footer-list__item">Модели развития</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="post-footer__actions">
+                        <a href="post.html" class="btn btn-primary btn-lg">Предыдущая статья</a>
+                        <a href="post.html" class="btn btn-secondary btn-lg">Следующая статья</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -215,6 +228,7 @@
         });
     </script>
 
+    <script src="js/aos-config.js"></script>
     <script src="js/modal.js"></script>
 </body>
 
