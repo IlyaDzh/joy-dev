@@ -192,6 +192,21 @@ a.btn {
     }
 }
 
+.image-blur {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(#000, 0.8);
+    color: #fff;
+    font-family: Gotham Pro Bold;
+    font-size: 28px;
+}
+
 .nav {
     background: $header-bg;
 
@@ -564,6 +579,16 @@ a.btn {
         &__description {
             font-size: 18px;
         }
+
+        &:hover {
+            color: $text-primary;
+
+            svg {
+                path {
+                    fill: $text-primary;
+                }
+            }
+        }
     }
 }
 
@@ -653,6 +678,12 @@ a.btn {
             &>button {
                 padding: 8px;
                 background: none;
+
+                &:hover {
+                    path {
+                        fill: $text-primary;
+                    }
+                }
             }
 
             #experience-slider-prev {
@@ -686,11 +717,18 @@ a.btn {
             }
 
             &__image {
+                position: relative;
                 border-radius: 17px;
                 overflow: hidden;
                 display: flex;
                 justify-content: center;
                 margin-bottom: 28px;
+
+                &:hover {
+                    .image-blur {
+                        display: flex;
+                    }
+                }
             }
 
             &__description {
@@ -817,6 +855,7 @@ a.btn {
 
         &__item {
             &__image {
+                position: relative;
                 display: block;
                 margin-bottom: 30px;
                 border-radius: 17px;
@@ -826,6 +865,12 @@ a.btn {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                }
+
+                &:hover {
+                    .image-blur {
+                        display: flex;
+                    }
                 }
             }
 
@@ -1225,6 +1270,10 @@ a.btn {
         font-size: 14px;
         padding: 10px 18px;
         min-height: 44px;
+    }
+
+    .image-blur {
+        font-size: 18px;
     }
 
     .container {
