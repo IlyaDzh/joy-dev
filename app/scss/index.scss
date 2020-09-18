@@ -460,6 +460,16 @@ a.btn {
             position: relative;
             flex: 0 0 50%;
 
+            .products-slider {
+                opacity: 0;
+                visibility: hidden;
+
+                &.tns-slider {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
             .tns-nav {
                 position: absolute;
                 top: 0;
