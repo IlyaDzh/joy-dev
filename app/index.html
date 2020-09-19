@@ -663,7 +663,7 @@
     </div>
 
     <script>
-         let partnersSlider = tns({
+        const partnersSlider = tns({
             container: "#partners-slider",
             items: 3,
             controls: false,
@@ -673,12 +673,11 @@
             speed: 1100,
             preventScrollOnTouch: true,
             preventActionWhenRunning: true,
-
             responsive: {
-                1350:{
+                1350: {
                     items: 7,
                 },
-                1150:{
+                1150: {
                     items: 5,
                 },
                 991: {
@@ -687,7 +686,7 @@
                 720: {
                     items: 7,
                 },
-                520:{
+                520: {
                     items: 5,
                 },
                 375: {
@@ -700,7 +699,7 @@
         window.addEventListener("scroll", () => {
             const offset = window.pageYOffset;
 
-            if( offset > lastScrollPosition ) partnersSlider.goTo('prev');
+            if (offset > lastScrollPosition) partnersSlider.goTo('prev');
             else partnersSlider.goTo('next');
 
             lastScrollPosition = offset;
@@ -730,7 +729,7 @@
             })
 
             sliderContainer.addEventListener('mouseup', (e) => {
-                if (mouseCoordY === e.clientY && mouseCoordX === e.clientX) 
+                if (mouseCoordY === e.clientY && mouseCoordX === e.clientX)
                     productSlider.goTo('next');
             })
         });
