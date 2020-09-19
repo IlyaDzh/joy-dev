@@ -640,11 +640,15 @@ a.btn {
                 min-height: 42px;
                 border-radius: 8px;
                 background: #fff;
-                margin-right: 10px;
                 font-size: 18px;
                 font-weight: bold;
                 padding: 7px 30px;
+                margin-right: 10px;
                 margin-bottom: 10px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
             }
         }
 
@@ -1290,6 +1294,83 @@ a.btn {
         max-width: unset;
     }
 
+    .achievements {
+        margin-bottom: 20px;
+
+        .section__title {
+            font-size: 20px;
+        }
+
+        &-item {
+            width: 50%;
+            text-align: center;
+            margin-bottom: 29px;
+
+            &__image {
+                margin-bottom: 14px;
+            }
+
+            &__description {
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .services {
+        margin-bottom: 32px;
+
+        .container {
+            padding: 0;
+        }
+
+        &-item {
+            display: block;
+            text-align: center;
+            border-radius: 0;
+            padding: 37px 17px 15px;
+
+            &__left {
+                max-width: unset;
+            }
+
+            &__title {
+                font-size: 20px;
+                line-height: 19px;
+                margin-bottom: 25px;
+            }
+
+            &__tags {
+                justify-content: center;
+                margin-bottom: 10px;
+
+                .tags-item {
+                    font-size: 14px;
+                    min-height: 33px;
+                    padding: 7px 8px;
+                }
+            }
+
+            &__description {
+                font-size: 15px;
+            }
+
+            &__btn {
+                margin: 0 auto 20px;
+            }
+
+            &__image {
+                position: unset;
+                max-width: 330px;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
     .experience {
         margin-bottom: 45px;
 
@@ -1385,18 +1466,19 @@ a.btn {
             &__caption {
                 text-align: center;
                 font-size: 13px;
+                margin-left: 0;
             }
         }
 
         &__avatar {
             width: 66px;
-            height: 66px;
+            border-radius: 6px;
             margin: 0 auto 24px;
         }
 
         &__name {
             font-size: 16px;
-            margin-bottom: 11px;
+            margin-bottom: 4px;
         }
 
         &__occupation {

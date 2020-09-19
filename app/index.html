@@ -395,7 +395,7 @@
                             Наши профессиональные разработчики iOS и Android создают высококачественный продукт, который
                             будет оптимизировать задачи вашего бизнеса и способствовать увеличению вашей прибыли
                         </p>
-                        <a href="#contacts" class="btn btn-secondary btn-lg">Получить оценку</a>
+                        <a href="#contacts" class="btn btn-secondary btn-lg services-item__btn">Получить оценку</a>
                     </div>
                     <div class="services-item__right">
                         <div class="services-item__image services-item__image--mobile">
@@ -418,7 +418,7 @@
                             Команда наших специалистов создает функционально сложные, интеграционные и высоконагруженные
                             проекты. Имеет большой опыт создания сайтов и сервисов, интернет-магазинов и лендингов
                         </p>
-                        <a href="#contacts" class="btn btn-secondary btn-lg">Получить оценку</a>
+                        <a href="#contacts" class="btn btn-secondary btn-lg services-item__btn">Получить оценку</a>
                     </div>
                     <div class="services-item__right">
                         <div class="services-item__image services-item__image--web">
@@ -700,11 +700,16 @@
             prevButton: "#experience-slider-prev",
             nextButton: "#experience-slider-next",
             autoWidth: true,
-            gutter: 32,
+            gutter: 18,
             controls: true,
             nav: false,
             loop: true,
-            speed: 400
+            speed: 400,
+            responsive: {
+                992: {
+                    gutter: 32
+                }
+            }
         });
     </script>
 
