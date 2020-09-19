@@ -306,6 +306,17 @@
                 </div>
             </div>
         </div>
+        <div class="footer-mobile-wrapper">
+            <button class="footer-mobile__btn">
+                <img src="img/footer/menu.png" alt="">
+            </button>
+            <a href="index.html" class="footer-mobile__logo">
+                <img src="img/logo-light.png" alt="Joy Dev logo">
+            </a>
+            <button class="footer-mobile__btn">
+                <img src="img/footer/phone.png" alt="">
+            </button>
+        </div>
     </footer>
 
     <div class="modal" id="call-modal">
@@ -352,15 +363,30 @@
         products.forEach(sliderContainer => {
             const productSlider = tns({
                 container: sliderContainer,
-                mode: "gallery",
+                mode: "carousel",
+                rewind: true,
                 autoplay: true,
                 autoplayButtonOutput: false,
                 items: 1,
+                mouseDrag: true,
                 controls: false,
                 nav: true,
                 loop: true,
-                speed: 700
+                speed: 700,
+                preventActionWhenRunning: true,
             });
+
+            let mouseCoordY, mouseCoordX;
+            sliderContainer.addEventListener('mousedown', (e) => {
+                mouseCoordY = e.clientY;
+                mouseCoordX = e.clientX;
+            })
+
+            sliderContainer.addEventListener('mouseup', (e) => {
+                if (mouseCoordY === e.clientY && mouseCoordX === e.clientX) {
+                    productSlider.goTo('next');
+                }
+            })
         });
     </script>
 

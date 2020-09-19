@@ -322,16 +322,28 @@ a.btn {
         line-height: 56px;
         color: #fff;
         margin-bottom: 48px;
+
+        &--mobile {
+            display: none;
+        }
     }
 
     &__subtitle {
         font-size: 20px;
         color: #fff;
         margin-bottom: 46px;
+
+        &--mobile {
+            display: none;
+        }
     }
 
     &-contact {
         display: flex;
+
+        &__inputs-mobile {
+            display: flex;
+        }
 
         &__input {
             margin-right: 11px;
@@ -374,6 +386,29 @@ a.btn {
         justify-content: space-between;
         align-items: center;
         padding: 45px 0 50px;
+    }
+
+    &-mobile {
+        &-wrapper {
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            padding: 11px 15px;
+            background: $footer-bg;
+        }
+
+        &__btn {
+            background: none;
+            border: none;
+        }
+
+        &__logo {
+            width: 30px;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 
     &__logo {
@@ -432,11 +467,14 @@ a.btn {
         }
     }
 
-    &__img{
+    &__img {
         height: 60px;
-        line-height: 60px;
         text-align: center;
         margin: 0px 10px;
+
+        img {
+            width: 100%;
+        }
     }
 }
 
@@ -449,11 +487,7 @@ a.btn {
 
     &-item {
         display: flex;
-        margin-bottom: 33px;
-
-        &:last-child {
-            margin-bottom: 72px;
-        }
+        margin-bottom: 32px;
 
         &__description {
             flex: 0 0 50%;
@@ -542,6 +576,7 @@ a.btn {
     &-all {
         display: flex;
         justify-content: center;
+        padding-top: 40px;
     }
 
     .product {
@@ -647,11 +682,15 @@ a.btn {
                 min-height: 42px;
                 border-radius: 8px;
                 background: #fff;
-                margin-right: 10px;
                 font-size: 18px;
                 font-weight: bold;
                 padding: 7px 30px;
+                margin-right: 10px;
                 margin-bottom: 10px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
             }
         }
 
@@ -1297,13 +1336,279 @@ a.btn {
         max-width: unset;
     }
 
-    .partners {
-        &__img{
-            margin: 0px 30px;
+    .nav {
+        &-wrapper {
+            padding: 21px 0;
+            min-height: 102px;
         }
 
-        &__img > img{
-            width: 110px;
+        &__logo {
+            min-width: 60px;
+            width: 60px;
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &-actions {
+            &>.btn:first-child {
+                display: none;
+            }
+        }
+    }
+
+    .header {
+        min-height: calc(100vh - 102px);
+
+        &__title {
+            display: none;
+            font-size: 20px;
+            line-height: unset;
+            margin-bottom: 21px;
+
+            &--mobile {
+                display: block;
+            }
+        }
+
+        &__subtitle {
+            display: none;
+            font-size: 15px;
+            margin-bottom: 38px;
+
+            &--mobile {
+                display: block;
+            }
+        }
+
+        &-container {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &-wrapper {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        &__images {
+            #header-man {
+                margin: 0 auto;
+                position: unset;
+                width: 300px;
+            }
+
+            #star2 {
+                left: unset;
+                right: 51px;
+                bottom: 0;
+                top: 43%;
+            }
+
+            #star3 {
+                top: 38%;
+                left: -10px;
+            }
+        }
+
+        &-contact {
+            display: block;
+
+            &__input {
+                font-size: 14px;
+                height: 44px;
+                width: 100%;
+            }
+
+            &__inputs-mobile {
+                display: flex;
+                margin-bottom: 14px;
+
+                &>input {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .footer {
+        &-wrapper {
+            justify-content: center;
+            padding-bottom: 40px;
+
+            &>a,
+            &>ul {
+                display: none;
+            }
+        }
+
+        &-mobile-wrapper {
+            display: flex;
+        }
+
+        &-info {
+            display: block;
+            text-align: center;
+
+            &__socials {
+                margin-right: 0;
+                margin-bottom: 14px;
+            }
+
+            &__copyright {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .products {
+        &-item {
+            flex-direction: column-reverse;
+
+            &__slider {
+                margin-bottom: 29px;
+
+                &__image {
+                    height: 345px;
+
+                    &__caption {
+                        left: 16px;
+                        top: 0;
+                        width: 220px;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        h5 {
+                            font-size: 14px;
+                        }
+
+                        p {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+
+            &__description {
+                text-align: center;
+                padding-right: 0;
+            }
+
+            .product {
+                &__title {
+                    font-size: 18px;
+                    line-height: 17px;
+                    margin-bottom: 13px;
+                }
+
+                &__subtitle {
+                    font-size: 15px;
+                }
+
+                &__downloads {
+                    margin: 0 auto 24px;
+                }
+
+                &__link {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        &-all {
+            padding-top: 0;
+        }
+    }
+
+    .achievements {
+        margin-bottom: 20px;
+
+        .section__title {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        &-item {
+            width: 50%;
+            text-align: center;
+            margin-bottom: 29px;
+
+            &__image {
+                margin-bottom: 14px;
+                height: 47px;
+
+                svg {
+                    height: 100%;
+
+                    path {
+                        fill: $text-primary;
+                    }
+                }
+            }
+
+            &__description {
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .services {
+        margin-bottom: 32px;
+
+        .container {
+            padding: 0;
+        }
+
+        &-item {
+            display: block;
+            text-align: center;
+            border-radius: 0;
+            padding: 37px 17px 15px;
+
+            &__left {
+                max-width: unset;
+            }
+
+            &__title {
+                font-size: 20px;
+                line-height: 19px;
+                margin-bottom: 25px;
+            }
+
+            &__tags {
+                justify-content: center;
+                margin-bottom: 10px;
+
+                .tags-item {
+                    font-size: 14px;
+                    min-height: 33px;
+                    padding: 7px 8px;
+                }
+            }
+
+            &__description {
+                font-size: 15px;
+            }
+
+            &__btn {
+                margin: 0 auto 20px;
+            }
+
+            &__image {
+                position: unset;
+                max-width: 330px;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 
@@ -1402,18 +1707,19 @@ a.btn {
             &__caption {
                 text-align: center;
                 font-size: 13px;
+                margin-left: 0;
             }
         }
 
         &__avatar {
             width: 66px;
-            height: 66px;
+            border-radius: 6px;
             margin: 0 auto 24px;
         }
 
         &__name {
             font-size: 16px;
-            margin-bottom: 11px;
+            margin-bottom: 4px;
         }
 
         &__occupation {
@@ -1434,5 +1740,19 @@ a.btn {
 @media (max-width: 575px) {
     .btn {
         max-width: unset !important;
+    }
+
+    .header {
+        padding-bottom: 16px;
+    }
+
+    .products {
+        &-item {
+            &__slider {
+                &__image {
+                    height: 190px;
+                }
+            }
+        }
     }
 }
