@@ -497,6 +497,8 @@ a.btn {
         &__slider {
             position: relative;
             flex: 0 0 50%;
+            border-radius: 22px;
+            overflow: hidden;
 
             .products-slider {
                 opacity: 0;
@@ -1479,6 +1481,8 @@ a.btn {
 
             &__slider {
                 margin-bottom: 29px;
+                border-radius: 10px;
+                overflow: hidden;
 
                 &__image {
                     height: 345px;
