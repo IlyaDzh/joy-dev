@@ -19,9 +19,9 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div style="display: flex; align-items: center">
-                    <a href="index.html" class="nav__arrow">
+                    <!-- <a href="index.html" class="nav__arrow">
                         <img src="img/header/header-arrow.png" alt="Back">
-                    </a>
+                    </a> -->
                     <a href="index.html" class="nav__logo">
                         <img src="img/logo-light.png" alt="Joy Dev logo">
                     </a>
@@ -34,7 +34,7 @@
                     <li><a href="index.html#contacts">Контакты</a></li>
                 </ul>
                 <div class="nav-actions">
-                    <button class="btn nav-actions__btn" id="call-btn">Заказать звонок</button>
+                    <button class="btn nav-actions__btn call-btn">Заказать звонок</button>
                     <button class="btn nav-actions__btn">Ru</button>
                 </div>
             </div>
@@ -189,15 +189,48 @@
             </div>
         </div>
         <div class="footer-mobile-wrapper">
-            <button class="footer-mobile__btn">
+            <button class="footer-mobile__btn open-menu">
                 <img src="img/footer/menu.png" alt="">
+            </button>
+            <button class="footer-mobile__btn close-menu">
+                <img src="img/footer/close.png" alt="">
             </button>
             <a href="index.html" class="footer-mobile__logo">
                 <img src="img/logo-light.png" alt="Joy Dev logo">
             </a>
-            <button class="footer-mobile__btn">
+            <button class="footer-mobile__btn call-btn">
                 <img src="img/footer/phone.png" alt="">
             </button>
+        </div>
+        <div class="footer-mobile-menu">
+            <ul class="footer-mobile-menu__list">
+                <li class="menu__item">
+                    <a href="index.html#partners">Клиенты</a>
+                </li>
+                <li class="menu__item">
+                    <a href="cases.html">Кейсы</a>
+                </li>
+                <li class="menu__item">
+                    <a href="index.html#services">Услуги</a>
+                </li>
+                <li class="menu__item">
+                    <a href="blog.html">Блог</a>
+                </li>
+                <li class="menu__item">
+                    <a href="index.html#contacts">Контакты</a>
+                </li>
+            </ul>
+            <div class="footer-mobile-menu__images">
+                <div id="star1">
+                    <img src="img/header/star2.png" alt="">
+                </div>
+                <div id="star2">
+                    <img src="img/header/star3.png" alt="">
+                </div>
+                <div id="dots">
+                    <img src="img/header/dots.png" alt="">
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -241,6 +274,7 @@
     </div>
 
     <script src="js/aos-config.js"></script>
+    <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
 </body>
 

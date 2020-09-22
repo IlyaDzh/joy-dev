@@ -407,6 +407,10 @@ a.btn {
         &__btn {
             background: none;
             border: none;
+
+            &.close-menu {
+                display: none;
+            }
         }
 
         &__logo {
@@ -442,6 +446,27 @@ a.btn {
                             color: #fff;
                         }
                     }
+                }
+            }
+
+            &__images {
+                &>div {
+                    position: absolute;
+                }
+
+                #star1 {
+                    top: 45%;
+                    right: 51px;
+                }
+
+                #star2 {
+                    top: 43%;
+                    left: -10px;
+                }
+
+                #dots {
+                    top: 70px;
+                    right: 93px;
                 }
             }
         }
@@ -1913,6 +1938,53 @@ a.btn {
             }
         }
     }
+
+    .modal {
+        &__title {
+            font-size: 20px;
+        }
+
+        &-content {
+            padding: 75px 20px 70px;
+        }
+
+        &-form {
+            width: 100%;
+
+            &__inputs {
+                display: block;
+                margin-bottom: 30px;
+
+                .input-wrapper {
+                    max-width: unset;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__actions {
+                width: 100%;
+            }
+
+            &__button {
+                margin: 0 auto 15px;
+            }
+
+            &__caption {
+                font-size: 13px;
+            }
+        }
+
+        &__images {
+            #phone {
+                display: none;
+            }
+
+            #blue-dots {
+                top: -82px;
+                right: 40px;
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -1950,6 +2022,20 @@ a.btn {
 
         &-all {
             display: block;
+        }
+    }
+
+    .modal {
+        padding: 20px;
+        
+        &__images {
+            #red-dots {
+                display: none;
+            }
+
+            #blue-dots {
+                display: none;
+            }
         }
     }
 }

@@ -1,12 +1,14 @@
 const modal = document.getElementById("call-modal");
-const openBtn = document.getElementById("call-btn");
+const openBtn = document.querySelectorAll(".call-btn");
 const closeBtn = document.getElementById("call-close");
 
-openBtn.onclick = function () {
-    modal.style.visibility = "visible";
-    modal.style.pointerEvents = "auto";
-    modal.style.opacity = 1;
-};
+openBtn.forEach(btn =>
+    btn.addEventListener("click", function () {
+        modal.style.visibility = "visible";
+        modal.style.pointerEvents = "auto";
+        modal.style.opacity = 1;
+    })
+);
 
 closeBtn.onclick = function () {
     modal.style.visibility = "invisible";
