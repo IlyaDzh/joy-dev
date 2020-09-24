@@ -363,8 +363,9 @@ a.btn {
                 position: absolute;
                 height: 18px;
                 width: 18px;
-                top: 13px;
+                top: 40%;
                 left: 14px;
+                transform: translateY(-50%);
 
                 &>img {
                     width: 100%;
@@ -1531,12 +1532,15 @@ a.btn {
 
                 &>input {
                     margin-right: 0;
+                    padding: 12px 15px;
                 }
             }
         }
     }
 
     .footer {
+        padding-bottom: 50px;
+
         &-wrapper {
             justify-content: center;
             padding-bottom: 40px;
@@ -1549,6 +1553,10 @@ a.btn {
 
         &-mobile-wrapper {
             display: flex;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
         }
 
         &-info {
@@ -1597,6 +1605,14 @@ a.btn {
                         p {
                             font-size: 13px;
                         }
+                    }
+                }
+
+                .tns-nav {
+                    padding: 14px 15px;
+
+                    &>button {
+                        height: 3px;
                     }
                 }
             }
@@ -1690,11 +1706,15 @@ a.btn {
             &__tags {
                 justify-content: center;
                 margin-bottom: 10px;
+                flex-wrap: unset;
 
                 .tags-item {
                     font-size: 14px;
                     min-height: 33px;
                     padding: 7px 8px;
+                    margin-right: 9px;
+                    width: 100%;
+                    max-width: 100px;
                 }
             }
 
@@ -1995,7 +2015,7 @@ a.btn {
     }
 
     .header {
-        padding-bottom: 16px;
+        padding-bottom: 37px;
     }
 
     .products {
@@ -2029,7 +2049,7 @@ a.btn {
 
     .modal {
         padding: 20px;
-        
+
         &__images {
             #red-dots {
                 display: none;
