@@ -544,6 +544,10 @@ a.btn {
         margin-bottom: 22px;
     }
 
+    &-list {
+        position: relative;
+    }
+
     &-item {
         display: flex;
         margin-bottom: 32px;
@@ -640,6 +644,25 @@ a.btn {
         padding-top: 40px;
     }
 
+    &__images {
+        &>div {
+            position: absolute;
+            z-index: -1;
+        }
+
+        #dots {
+            top: -9px;
+            left: -100px;
+            z-index: -1;
+        }
+
+        #square {
+            top: 99px;
+            left: -363px;
+            z-index: -2;
+        }
+    }
+
     .product {
         &__title {
             font-family: Gotham Pro Bold;
@@ -687,20 +710,15 @@ a.btn {
     &-item {
         &__image {
             margin-bottom: 54px;
+            height: 70px;
+
+            img {
+                height: 100%;
+            }
         }
 
         &__description {
             font-size: 18px;
-        }
-
-        &:hover {
-            color: $text-primary;
-
-            svg {
-                path {
-                    fill: $text-primary;
-                }
-            }
         }
     }
 }
@@ -1149,9 +1167,9 @@ a.btn {
 
         &-list {
             &__item {
+                font-family: Gotham Pro Bold;
                 position: relative;
                 font-size: 18px;
-                font-weight: bold;
                 margin-bottom: 11px;
 
                 &::before {
@@ -1577,6 +1595,10 @@ a.btn {
     .products {
         margin-bottom: 38px;
 
+        &.products-cases {
+            margin-bottom: 6px;
+        }
+
         &-item {
             flex-direction: column-reverse;
 
@@ -1646,6 +1668,10 @@ a.btn {
         &-all {
             padding-top: 0;
         }
+
+        &__images {
+            display: none;
+        }
     }
 
     .achievements {
@@ -1663,14 +1689,6 @@ a.btn {
             &__image {
                 margin-bottom: 14px;
                 height: 47px;
-
-                svg {
-                    height: 100%;
-
-                    path {
-                        fill: $text-primary;
-                    }
-                }
             }
 
             &__description {
