@@ -684,9 +684,10 @@ a.btn {
                 width: 46px;
                 min-height: 46px;
                 padding: 0;
+                margin-right: 12px;
 
-                &:first-child {
-                    margin-right: 12px;
+                &:last-child {
+                    margin-right: 0;
                 }
             }
         }
