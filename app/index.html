@@ -692,7 +692,6 @@
         const partnersSlider = tns({
             container: "#partners-slider",
             mode: "carousel",
-            items: 3,
             autoplay: true,
             controls: false,
             nav: false,
@@ -713,7 +712,7 @@
                 1150: {
                     items: 5,
                 },
-                991: {
+                992: {
                     items: 4,
                 },
                 720: {
@@ -743,7 +742,6 @@
         products.forEach(sliderContainer => {
             const productSlider = tns({
                 container: sliderContainer,
-                mode: "carousel",
                 rewind: true,
                 autoplay: true,
                 autoplayButtonOutput: false,
@@ -777,7 +775,7 @@
             gutter: 18,
             controls: true,
             nav: false,
-            loop: true,
+            loop: false,
             speed: 400,
             responsive: {
                 992: {

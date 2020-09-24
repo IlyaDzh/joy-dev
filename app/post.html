@@ -74,6 +74,7 @@
                             <img src="img/post/right-arrow.svg" alt="">
                         </button>
                     </div>
+
                     <div id="post-slider">
                         <div>
                             <img src="img/post/post-main.png" alt="">
@@ -85,6 +86,22 @@
                             <img src="img/post/post-main.png" alt="">
                         </div>
                     </div>
+
+                    <div id="post-slider-mobile">
+                        <div>
+                            <img src="img/post/post-main.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/post/post-main.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/post/post-main.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/post/post-main.png" alt="">
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -261,7 +278,7 @@
     </div>
 
     <script>
-        const experienceSlider = tns({
+        const postSlider = tns({
             container: "#post-slider",
             prevButton: "#post-slider-prev",
             nextButton: "#post-slider-next",
@@ -270,6 +287,16 @@
             controls: true,
             nav: false,
             loop: true,
+            speed: 700
+        });
+
+        const postSliderMobile = tns({
+            container: "#post-slider-mobile",
+            autoWidth: true,
+            controls: false,
+            nav: false,
+            loop: false,
+            gutter: 12,
             speed: 700
         });
     </script>

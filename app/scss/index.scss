@@ -1114,6 +1114,17 @@ a.btn {
         img {
             width: 100%;
         }
+
+        #post-slider-mobile {
+            display: none;
+
+            img {
+                width: 276px;
+                height: 242px;
+                object-fit: cover;
+                border-radius: 13px;
+            }
+        }
     }
 
     &-content {
@@ -2062,6 +2073,22 @@ a.btn {
 
         &-all {
             display: block;
+        }
+    }
+
+    .post {
+        &-slider {
+            &__controls {
+                display: none;
+            }
+
+            #post-slider {
+                display: none;
+            }
+
+            #post-slider-mobile {
+                display: block;
+            }
         }
     }
 
