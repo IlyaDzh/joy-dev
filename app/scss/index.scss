@@ -403,6 +403,7 @@ a.btn {
             align-items: center;
             padding: 11px 15px;
             background: $footer-bg;
+            z-index: 1;
         }
 
         &__btn {
@@ -981,7 +982,7 @@ a.btn {
 }
 
 .blog {
-    margin-bottom: 80px;
+    margin-bottom: 22px;
 
     &-grid {
         display: grid;
@@ -1035,8 +1036,7 @@ a.btn {
     }
 
     &-all {
-        display: none;
-        padding-top: 20px;
+        padding-top: 60px;
 
         .btn {
             margin: 0 auto;
@@ -1101,6 +1101,7 @@ a.btn {
             left: 0;
             top: 50%;
             right: 0;
+            height: 100%;
             transform: translateY(-50%);
             z-index: 1;
             display: flex;
@@ -1109,6 +1110,12 @@ a.btn {
             &>button {
                 padding: 16px;
                 background: none;
+
+                &:hover {
+                    svg path {
+                        fill: $btn-primary;
+                    }
+                }
             }
         }
 
@@ -2070,10 +2077,6 @@ a.btn {
                     height: 195px;
                 }
             }
-        }
-
-        &-all {
-            display: block;
         }
     }
 

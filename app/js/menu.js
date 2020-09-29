@@ -22,10 +22,7 @@ function openMenu() {
         "position: fixed; top: 0px; left: 0px; right: 0px; z-index: 1;"
     );
     navArrow && navArrow.setAttribute("style", "display: none;");
-    footer.setAttribute(
-        "style",
-        "position: fixed; left: 0px; right: 0px; bottom: 0px; z-index: 1; background: rgb(88, 38, 228);"
-    );
+    footer.setAttribute("style", "background: rgb(88, 38, 228);");
     menu.setAttribute("style", "display: flex; position: fixed;");
     closeMenuBtn.setAttribute("style", "display: block;");
     openMenuBtn.setAttribute("style", "display: none;");
