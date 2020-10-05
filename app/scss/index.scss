@@ -821,6 +821,14 @@ a.btn {
                         fill: $text-primary;
                     }
                 }
+
+                &:disabled {
+                    cursor: default;
+
+                    path {
+                        fill: #82848a;
+                    }
+                }
             }
 
             #experience-slider-prev {
