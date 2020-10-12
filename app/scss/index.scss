@@ -403,7 +403,7 @@ a.btn {
             align-items: center;
             padding: 11px 15px;
             background: $footer-bg;
-            z-index: 1;
+            z-index: 20;
         }
 
         &__btn {
@@ -432,6 +432,7 @@ a.btn {
             justify-content: center;
             align-items: center;
             background: $footer-bg;
+            z-index: 15;
 
             &__list {
                 font-family: Gotham Pro Bold;
@@ -1227,7 +1228,7 @@ a.btn {
     visibility: hidden;
     opacity: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     left: 0;
     top: 0;
     right: 0;
@@ -1306,6 +1307,63 @@ a.btn {
         #red-dots {
             bottom: -83px;
             left: 42px;
+        }
+    }
+}
+
+.alerts {
+    position: fixed;
+    margin: 32px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .alert {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 520px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background: rgba(246, 245, 255, 0.9);
+        padding: 32px;
+        border-radius: 22px;
+        z-index: 10;
+        transition: opacity 0.5s ease;
+
+        &__image {
+            margin-right: 32px;
+            max-width: 76px;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__text {
+            font-weight: bold;
+        }
+
+        &__close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 45px;
+            height: 45px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+        }
+
+        &.active {
+            visibility: visible;
+            opacity: 1;
         }
     }
 }
@@ -2049,6 +2107,28 @@ a.btn {
             #blue-dots {
                 top: -82px;
                 right: 40px;
+            }
+        }
+    }
+
+    .alerts {
+        margin: 12px;
+        top: 0;
+        bottom: auto;
+
+        .alert {
+            top: 0;
+            left: 0;
+            bottom: auto;
+            right: auto;
+
+            &__image {
+                max-width: 42px;
+                margin-right: 16px;
+            }
+
+            &__text {
+                font-size: 12px;
             }
         }
     }

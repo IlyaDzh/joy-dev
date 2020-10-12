@@ -14,6 +14,7 @@
     <script src="js/tiny-slider.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/input-validation.js"></script>
+    <script src="js/alerts.js"></script>
 </head>
 
 <body>
@@ -284,6 +285,31 @@
                     <img src="img/modal/modal-red-dots.png" alt="">
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="alerts">
+        <div class="alert alert-success">
+            <div class="alert__image">
+                <img src="img/alerts/alert-yes.png" alt="Success">
+            </div>
+            <p class="alert__text">
+                Ваша заявка была успешно отправлена!
+            </p>
+            <button class="alert__close" onclick="closeAlert()">
+                <img src="img/alerts/close.svg" alt="">
+            </button>
+        </div>
+        <div class="alert alert-error">
+            <div class="alert__image">
+                <img src="img/alerts/alert-no.png" alt="Error">
+            </div>
+            <p class="alert__text">
+                Во время обработки вашей заявки произошла ошибка. Пожалуйста, повторите попытку позже.
+            </p>
+            <button class="alert__close" onclick="closeAlert()">
+                <img src="img/alerts/close.svg" alt="">
+            </button>
         </div>
     </div>
 

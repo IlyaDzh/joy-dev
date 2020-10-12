@@ -19,7 +19,7 @@ closeMenuBtn.onclick = function () {
 function openMenu() {
     navBar.setAttribute(
         "style",
-        "position: fixed; top: 0px; left: 0px; right: 0px; z-index: 1;"
+        "position: fixed; top: 0px; left: 0px; right: 0px; z-index: 20;"
     );
     navArrow && navArrow.setAttribute("style", "display: none;");
     footer.setAttribute("style", "background: rgb(88, 38, 228);");
