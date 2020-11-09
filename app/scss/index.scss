@@ -1,5 +1,6 @@
 @import "./variables.scss";
 @import "./fonts.scss";
+@import "./privacy.scss";
 
 body {
     font-family: "Gotham Pro Regular", sans-serif;
@@ -1053,49 +1054,6 @@ a.btn {
     }
 }
 
-.privacy {
-    &-list {
-        counter-reset: my-counter;
-
-        &__item {
-            margin-bottom: 40px;
-            counter-increment: my-counter;
-
-            &::before {
-                content: counter(my-counter) ". ";
-                font-family: Gotham Pro Bold;
-                font-size: 32px;
-            }
-
-            .item {
-                &__title {
-                    font-family: Gotham Pro Bold;
-                    font-size: 32px;
-                }
-
-                &__description {
-                    margin-top: 23px;
-                    font-size: 18px;
-                    margin-bottom: 20px;
-                }
-
-                &-list {
-                    padding-left: 40px;
-
-                    &__item {
-                        margin-bottom: 20px;
-                        counter-increment: my-counter-inner;
-
-                        &::before {
-                            content: counter(my-counter) "."counter(my-counter-inner) ". ";
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 .post {
     .section__title {
         max-width: 870px;
@@ -2028,37 +1986,6 @@ a.btn {
 
                 .btn:first-child {
                     margin-bottom: 11px;
-                }
-            }
-        }
-    }
-
-    .privacy {
-        &-list {
-            &__item {
-                margin-bottom: 30px;
-
-                .item {
-                    &__title {
-                        font-size: 16px;
-                    }
-
-                    &__description {
-                        font-size: 14px;
-                        margin: 16px 0;
-                    }
-
-                    &-list {
-                        font-size: 14px;
-
-                        &__item {
-                            margin-bottom: 10px;
-                        }
-                    }
-                }
-
-                &::before {
-                    font-size: 16px;
                 }
             }
         }
