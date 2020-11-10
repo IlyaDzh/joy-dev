@@ -1100,6 +1100,14 @@ a.btn {
                 border-radius: 13px;
             }
         }
+
+        #post-slider {
+            img {
+                height: 500px;
+                object-fit: cover;
+                border-radius: 13px;
+            }
+        }
     }
 
     &-content {
@@ -1987,6 +1995,12 @@ a.btn {
                 .btn:first-child {
                     margin-bottom: 11px;
                 }
+            }
+        }
+
+        #post-slider {
+            img {
+                height: 370px;
             }
         }
     }
