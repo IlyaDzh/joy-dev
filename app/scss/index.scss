@@ -1182,6 +1182,14 @@ a.btn {
         &__actions {
             display: flex;
             justify-content: space-between;
+
+            .btn-primary {
+                margin-right: auto;
+            }
+
+            .btn-secondary {
+                margin-left: auto;
+            }
         }
     }
 }
@@ -1990,10 +1998,14 @@ a.btn {
             }
 
             &__actions {
-                display: block;
+                .btn {
+                    &:first-child {
+                        margin-right: 15px;
+                    }
 
-                .btn:first-child {
-                    margin-bottom: 11px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
                 }
             }
         }
@@ -2121,6 +2133,16 @@ a.btn {
 
             #post-slider-mobile {
                 display: block;
+            }
+        }
+
+        &-footer {
+            &__actions {
+                display: block;
+
+                .btn:first-child {
+                    margin-bottom: 11px;
+                }
             }
         }
     }
