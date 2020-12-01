@@ -723,6 +723,10 @@ a.btn {
 
         &__description {
             font-size: 18px;
+
+            span.break-line {
+                display: none;
+            }
         }
     }
 }
@@ -770,10 +774,6 @@ a.btn {
                 padding: 7px 30px;
                 margin-right: 10px;
                 margin-bottom: 10px;
-
-                &:last-child {
-                    margin-right: 0;
-                }
             }
         }
 
@@ -1291,6 +1291,7 @@ a.btn {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 6;
 
     .alert {
         visibility: hidden;
@@ -1783,13 +1784,12 @@ a.btn {
             &__tags {
                 justify-content: center;
                 margin-bottom: 10px;
-                flex-wrap: unset;
 
                 .tags-item {
                     font-size: 14px;
                     min-height: 33px;
                     padding: 7px 8px;
-                    margin-right: 9px;
+                    margin: 0 4px 8px;
                     width: 100%;
                     max-width: 100px;
                 }
@@ -2074,6 +2074,7 @@ a.btn {
             left: 0;
             bottom: auto;
             right: auto;
+            padding-right: 64px;
 
             &__image {
                 max-width: 42px;
@@ -2101,6 +2102,16 @@ a.btn {
             &__slider {
                 &__image {
                     height: 190px;
+                }
+            }
+        }
+    }
+
+    .achievements {
+        &-item {
+            &__description {
+                span.break-line {
+                    display: block;
                 }
             }
         }
