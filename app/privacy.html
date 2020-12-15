@@ -239,7 +239,11 @@
             </form>
             <div class="modal__images">
                 <div id="phone">
-                    <img src="img/modal/modal-phone.png" alt="">
+                    <picture>
+                        <source srcset="img/modal/modal-phone.webp 1x, img/modal/modal-phone@2x.webp 2x"
+                            type="image/webp">
+                        <img src="img/modal/modal-phone.png" srcset="img/modal/modal-phone@2x.png 2x" alt="">
+                    </picture>
                 </div>
                 <div id="blue-dots">
                     <img src="img/modal/modal-blue-dots.png" alt="">

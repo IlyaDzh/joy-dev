@@ -70,7 +70,13 @@
             </div>
             <div class="header__images">
                 <div id="header-man">
-                    <img src="img/header/header-bg.png" alt="">
+                    <picture>
+                        <source
+                            srcset="img/header/background/header-bg.webp 1x, img/header/background/header-bg@2x.webp 2x"
+                            type="image/webp">
+                        <img src="img/header/background/header-bg.png"
+                            srcset="img/header/background/header-bg@2x.png 2x" alt="">
+                    </picture>
                 </div>
                 <div id="star1">
                     <img src="img/header/star1.png" alt="">
@@ -383,7 +389,13 @@
                     </div>
                     <div class="services-item__right">
                         <div class="services-item__image services-item__image--mobile">
-                            <img src="img/services/mobile-service.png" alt="Mobile service">
+                            <picture>
+                                <source
+                                    srcset="img/services/mobile-service.webp 1x, img/services/mobile-service@2x.webp 2x"
+                                    type="image/webp">
+                                <img src="img/services/mobile-service.png"
+                                    srcset="img/services/mobile-service@2x.png 2x" alt="">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -406,7 +418,12 @@
                     </div>
                     <div class="services-item__right">
                         <div class="services-item__image services-item__image--web">
-                            <img src="img/services/web-service.png" alt="Web service">
+                            <picture>
+                                <source srcset="img/services/web-service.webp 1x, img/services/web-service@2x.webp 2x"
+                                    type="image/webp">
+                                <img src="img/services/web-service.png" srcset="img/services/web-service@2x.png 2x"
+                                    alt="">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -678,7 +695,11 @@
             </form>
             <div class="modal__images">
                 <div id="phone">
-                    <img src="img/modal/modal-phone.png" alt="">
+                    <picture>
+                        <source srcset="img/modal/modal-phone.webp 1x, img/modal/modal-phone@2x.webp 2x"
+                            type="image/webp">
+                        <img src="img/modal/modal-phone.png" srcset="img/modal/modal-phone@2x.png 2x" alt="">
+                    </picture>
                 </div>
                 <div id="blue-dots">
                     <img src="img/modal/modal-blue-dots.png" alt="">
@@ -724,13 +745,12 @@
         const partnersSlider = tns({
             container: "#partners-slider",
             mode: "carousel",
-            autoplay: true,
             controls: false,
             swipeAngle: false,
             nav: false,
             loop: true,
             autoplayButtonOutput: false,
-            speed: 1100,
+            speed: 300,
             slideBy: 2,
             preventScrollOnTouch: true,
             preventActionWhenRunning: true,
