@@ -1,9 +1,12 @@
 @import "./variables.scss";
 @import "./fonts.scss";
-@import "./privacy.scss";
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    font-family: "Gotham Pro Regular", sans-serif;
+    font-family: "Gotham Pro", sans-serif;
     color: $text-black;
 }
 
@@ -138,8 +141,8 @@ a.btn {
     }
 
     &__title {
-        font-family: Gotham Pro Bold;
         font-size: 45px;
+        font-weight: bold;
         color: #000;
         margin-bottom: 35px;
     }
@@ -204,7 +207,7 @@ a.btn {
     align-items: center;
     background: rgba(#000, 0.8);
     color: #fff;
-    font-family: Gotham Pro Bold;
+    font-weight: bold;
     font-size: 28px;
 }
 
@@ -245,7 +248,7 @@ a.btn {
             }
 
             a {
-                font-family: Gotham Pro Bold;
+                font-weight: bold;
                 font-size: 16px;
                 line-height: 15px;
                 color: #fff;
@@ -325,7 +328,7 @@ a.btn {
     }
 
     &__title {
-        font-family: Gotham Pro Bold;
+        font-weight: bold;
         font-size: 45px;
         line-height: 56px;
         color: #fff;
@@ -436,7 +439,7 @@ a.btn {
             z-index: 15;
 
             &__list {
-                font-family: Gotham Pro Bold;
+                font-weight: bold;
                 font-size: 18px;
                 text-align: center;
 
@@ -495,7 +498,7 @@ a.btn {
             }
 
             a {
-                font-family: Gotham Pro Bold;
+                font-weight: bold;
                 font-size: 16px;
                 line-height: 15px;
                 color: $text-black;
@@ -622,7 +625,7 @@ a.btn {
                     }
 
                     h5 {
-                        font-family: Gotham Pro Bold;
+                        font-weight: bold;
                         font-size: 18px;
                         line-height: 17px;
                         margin-bottom: 20px;
@@ -668,7 +671,7 @@ a.btn {
 
     .product {
         &__title {
-            font-family: Gotham Pro Bold;
+            font-weight: bold;
             font-size: 32px;
             line-height: 31px;
             margin-bottom: 22px;
@@ -697,7 +700,7 @@ a.btn {
 
         &__link {
             color: $text-primary;
-            font-family: Gotham Pro Bold;
+            font-weight: bold;
             font-size: 17px;
             text-decoration: underline;
 
@@ -752,7 +755,7 @@ a.btn {
         }
 
         &__title {
-            font-family: Gotham Pro Bold;
+            font-weight: bold;
             font-size: 45px;
             margin-bottom: 30px;
         }
@@ -770,7 +773,6 @@ a.btn {
                 border-radius: 8px;
                 background: #fff;
                 font-size: 18px;
-                font-weight: bold;
                 padding: 7px 30px;
                 margin-right: 10px;
                 margin-bottom: 10px;
@@ -882,7 +884,6 @@ a.btn {
                 color: $text-black;
                 width: 90%;
                 font-size: 18px;
-                font-weight: bold;
 
                 &:hover {
                     text-decoration: none;
@@ -907,7 +908,7 @@ a.btn {
     }
 
     &__title {
-        font-family: Gotham Pro Bold;
+        font-weight: bold;
         font-size: 45px;
         color: #fff;
         margin-bottom: 62px;
@@ -937,7 +938,7 @@ a.btn {
     }
 
     &__name {
-        font-family: Gotham Pro Bold;
+        font-weight: bold;
         font-size: 25px;
         color: #fff;
         margin-bottom: 24px;
@@ -950,7 +951,7 @@ a.btn {
     }
 
     &__info {
-        font-family: Gotham Pro Bold;
+        font-weight: bold;
         font-size: 18px;
         color: #fff;
     }
@@ -1025,7 +1026,6 @@ a.btn {
                 color: $text-black;
                 width: 90%;
                 font-size: 18px;
-                font-weight: bold;
 
                 &:hover {
                     color: $text-black;
@@ -1127,7 +1127,7 @@ a.btn {
 
         &__title {
             width: 60%;
-            font-family: Gotham Pro Bold;
+            font-weight: bold;
             font-size: 32px;
             color: #000;
             line-height: 38px;
@@ -1161,7 +1161,7 @@ a.btn {
 
         &-list {
             &__item {
-                font-family: Gotham Pro Bold;
+                font-weight: bold;
                 position: relative;
                 font-size: 18px;
                 margin-bottom: 11px;
@@ -1194,6 +1194,23 @@ a.btn {
     }
 }
 
+.privacy {
+    &__description {
+        margin-top: 23px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        padding-left: 40px;
+        list-style: decimal;
+
+        &-item {
+            margin-bottom: 20px;
+        }
+    }
+}
+
 .modal {
     pointer-events: none;
     display: flex;
@@ -1221,7 +1238,7 @@ a.btn {
     }
 
     &__title {
-        font-family: Gotham Pro Bold;
+        font-weight: bold;
         font-size: 45px;
         color: #fff;
         margin-bottom: 40px;
@@ -2013,6 +2030,21 @@ a.btn {
         #post-slider {
             img {
                 height: 370px;
+            }
+        }
+    }
+
+    .privacy {
+        &__description {
+            font-size: 14px;
+            margin: 16px 0;
+        }
+
+        &__list {
+            font-size: 14px;
+
+            &-item {
+                margin-bottom: 10px;
             }
         }
     }
