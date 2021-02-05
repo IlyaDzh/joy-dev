@@ -59,7 +59,7 @@
                                 <img src="img/header/ru.png" alt="ru">
                             </div>
                             <input type="text" id="header-country" class="header-contact__input" placeholder="+7"
-                                value="+7" required>
+                                value="+7" pattern="^\+[0-9]{1}" required>
                         </div>
                         <input type="tel" id="header-phone" class="header-contact__input" placeholder="999-999-9999"
                             pattern="[0-9]{10}" title="Номер телефона должен состоять из 10 чисел" required>
@@ -849,7 +849,6 @@
     <script src="js/aos-config.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/validate-phone.js"></script>
 </body>
 
 </html>
