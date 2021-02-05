@@ -59,9 +59,10 @@
                                 <img src="img/header/ru.png" alt="ru">
                             </div>
                             <input type="text" id="header-country" class="header-contact__input" placeholder="+7"
-                                value="+7">
+                                value="+7" required>
                         </div>
-                        <input type="text" id="header-phone" class="header-contact__input" placeholder="999-999-9999">
+                        <input type="tel" id="header-phone" class="header-contact__input" placeholder="999-999-9999"
+                            pattern="[0-9]{10}" title="Номер телефона должен состоять из 10 чисел" required>
                     </div>
                     <button class="btn btn-secondary header-contact__button" type="submit">
                         Реализовать мою идею
@@ -553,8 +554,9 @@
                                     </div>
                                     <div class="input-wrapper">
                                         <span class="input-validation input-validation--red"></span>
-                                        <input class="input" id="number" placeholder="Телефон"
-                                            oninput="handleInputChange('number')" required>
+                                        <input type="tel" class="input" id="number" placeholder="Телефон"
+                                            oninput="handleInputChange('number')" pattern="\+*[0-9]{11}"
+                                            title="Номер телефона должен быть в формате +79999999999" required>
                                     </div>
                                     <div class="input-wrapper">
                                         <span class="input-validation input-validation--red"></span>
@@ -680,8 +682,9 @@
                     </div>
                     <div class="input-wrapper">
                         <span class="input-validation input-validation--red"></span>
-                        <input class="input" id="modal-number" placeholder="Телефон"
-                            oninput="handleInputChange('modal-number')" required>
+                        <input type="tel" class="input" id="modal-number" placeholder="Телефон"
+                            oninput="handleInputChange('modal-number')" pattern="\+*[0-9]{11}"
+                            title="Номер телефона должен быть в формате +79999999999" required>
                     </div>
                 </div>
                 <div class="modal-form__actions">
