@@ -1325,8 +1325,9 @@ a.btn {
         width: 100%;
         display: flex;
         align-items: center;
-        background: rgba(246, 245, 255, 0.9);
+        background: #f6f5ff;
         padding: 32px;
+        border: 1px solid #121b30;
         border-radius: 22px;
         z-index: 10;
         transition: opacity 0.5s ease;
