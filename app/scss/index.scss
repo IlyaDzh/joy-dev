@@ -52,6 +52,16 @@ button {
     }
 }
 
+input {
+    &:invalid+.input-validation {
+        background: url("../img/inputs/red.png") no-repeat;
+    }
+
+    &:valid+.input-validation {
+        background: url("../img/inputs/green.png") no-repeat;
+    }
+}
+
 .btn {
     padding: 12px 22px;
     font-size: 18px;
@@ -123,14 +133,6 @@ a.btn {
             top: 15px;
             width: 10px;
             height: 10px;
-
-            &--green {
-                background: url("../img/inputs/green.png") no-repeat;
-            }
-
-            &--red {
-                background: url("../img/inputs/red.png") no-repeat;
-            }
         }
     }
 }
@@ -363,25 +365,22 @@ a.btn {
             height: 56px;
             border-radius: 12px;
 
-            &__flag {
-                position: absolute;
-                height: 18px;
-                width: 18px;
-                top: 40%;
-                left: 14px;
-                transform: translateY(-50%);
+            &-phone {
+                margin-right: 11px;
 
-                &>img {
-                    width: 100%;
+                .iti__flag-container {
+                    left: 0;
+                    right: unset;
+
+                    .iti__selected-flag {
+                        padding: 0 6px 0 14px;
+                    }
                 }
-            }
-
-            &-wrapper {
-                position: relative;
 
                 input {
-                    width: 80px;
-                    padding: 15px 11px 15px 39px;
+                    width: 110px;
+                    padding-left: 44px !important;
+                    padding-right: 20px !important;
                 }
             }
         }
@@ -1116,7 +1115,8 @@ a.btn {
             height: auto;
         }
 
-        ol, ul {
+        ol,
+        ul {
             list-style: initial;
             margin: 1em 0;
             padding-left: 40px;
@@ -2209,5 +2209,16 @@ a.btn {
         &__img>img {
             width: 100px;
         }
+    }
+}
+
+.iti__flag {
+    background-image: url("../img/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .iti__flag {
+        background-image: url("../img/flags@2x.png");
     }
 }

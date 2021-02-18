@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/aos.js"></script>
-    <script src="js/input-validation.js"></script>
     <script src="js/alerts.js"></script>
 </head>
 
@@ -218,14 +217,14 @@
             <form action="" method="POST" class="modal-form" autocomplete="off">
                 <div class="modal-form__inputs">
                     <div class="input-wrapper">
-                        <span class="input-validation input-validation--red"></span>
-                        <input class="input" id="modal-fullname" placeholder="Имя"
-                            oninput="handleInputChange('modal-fullname')" required>
+                        <input class="input" id="modal-fullname" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё\s]+"
+                            required>
+                        <span class="input-validation"></span>
                     </div>
                     <div class="input-wrapper">
-                        <span class="input-validation input-validation--red"></span>
-                        <input class="input" id="modal-number" placeholder="Телефон"
-                            oninput="handleInputChange('modal-number')" required>
+                        <input type="tel" class="input" id="modal-number" placeholder="Телефон" pattern="\+*[0-9]{11}"
+                            title="Номер телефона должен быть в формате +79999999999" required>
+                        <span class="input-validation"></span>
                     </div>
                 </div>
                 <div class="modal-form__actions">

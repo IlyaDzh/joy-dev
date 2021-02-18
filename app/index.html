@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/intlTelInput.min.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/tiny-slider.js"></script>
     <script src="js/aos.js"></script>
-    <script src="js/input-validation.js"></script>
     <script src="js/alerts.js"></script>
 </head>
 
@@ -54,12 +54,9 @@
                 </p>
                 <form action="" method="POST" class="header-contact">
                     <div class="header-contact__inputs-mobile">
-                        <div class="header-contact__input-wrapper">
-                            <div class="header-contact__input__flag">
-                                <img src="img/header/ru.png" alt="ru">
-                            </div>
-                            <input type="text" id="header-country" class="header-contact__input" placeholder="+7"
-                                value="+7" pattern="^\+[0-9]{1}" required>
+                        <div class="header-contact__input-phone">
+                            <input type="tel" id="header-phone-country" class="header-contact__input" placeholder="+7"
+                                value="+7" minlength="2" required>
                         </div>
                         <input type="tel" id="header-phone" class="header-contact__input" placeholder="999-999-9999"
                             pattern="[0-9]{10}" title="Номер телефона должен состоять из 10 чисел" required>
@@ -543,30 +540,28 @@
                             <form action="" method="POST" class="contact-form" autocomplete="off">
                                 <div class="contact-form__inputs-wrapper">
                                     <div class="input-wrapper">
-                                        <span class="input-validation input-validation--red"></span>
                                         <input class="input" id="fullname" placeholder="Имя"
-                                            oninput="handleInputChange('fullname')" required>
+                                            pattern="[A-Za-zА-Яа-яЁё\s]+" required>
+                                        <span class="input-validation"></span>
                                     </div>
                                     <div class="input-wrapper">
-                                        <span class="input-validation input-validation--red"></span>
-                                        <input class="input" id="email" type="email" placeholder="E-mail"
-                                            oninput="handleInputChange('email')" required>
+                                        <input class="input" id="email" type="email" placeholder="E-mail" required>
+                                        <span class="input-validation"></span>
                                     </div>
                                     <div class="input-wrapper">
-                                        <span class="input-validation input-validation--red"></span>
                                         <input type="tel" class="input" id="number" placeholder="Телефон"
-                                            oninput="handleInputChange('number')" pattern="\+*[0-9]{11}"
+                                            pattern="\+*[0-9]{11}"
                                             title="Номер телефона должен быть в формате +79999999999" required>
+                                        <span class="input-validation"></span>
                                     </div>
                                     <div class="input-wrapper">
-                                        <span class="input-validation input-validation--red"></span>
-                                        <input class="input" id="company_name" placeholder="Название компании"
-                                            oninput="handleInputChange('company_name')" required>
+                                        <input class="input" id="company_name" placeholder="Название компании" required>
+                                        <span class="input-validation"></span>
                                     </div>
                                     <div class="input-wrapper">
-                                        <span class="input-validation input-validation--red"></span>
                                         <input class="input" id="about_project" placeholder="Пара слов о проекте"
-                                            oninput="handleInputChange('about_project')" required>
+                                            required>
+                                        <span class="input-validation"></span>
                                     </div>
                                 </div>
                                 <div class="contact-form__button-wrapper">
@@ -676,15 +671,14 @@
             <form action="" method="POST" class="modal-form" autocomplete="off">
                 <div class="modal-form__inputs">
                     <div class="input-wrapper">
-                        <span class="input-validation input-validation--red"></span>
-                        <input class="input" id="modal-fullname" placeholder="Имя"
-                            oninput="handleInputChange('modal-fullname')" required>
+                        <input class="input" id="modal-fullname" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё\s]+"
+                            required>
+                        <span class="input-validation"></span>
                     </div>
                     <div class="input-wrapper">
-                        <span class="input-validation input-validation--red"></span>
-                        <input type="tel" class="input" id="modal-number" placeholder="Телефон"
-                            oninput="handleInputChange('modal-number')" pattern="\+*[0-9]{11}"
+                        <input type="tel" class="input" id="modal-number" placeholder="Телефон" pattern="\+*[0-9]{11}"
                             title="Номер телефона должен быть в формате +79999999999" required>
+                        <span class="input-validation"></span>
                     </div>
                 </div>
                 <div class="modal-form__actions">
@@ -738,11 +732,6 @@
             </button>
         </div>
     </div>
-
-    <script>
-        showAlert("success");
-        showAlert("error");
-    </script>
 
     <script>
         const partnersSlider = tns({
@@ -849,6 +838,15 @@
     <script src="js/aos-config.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/intlTelInput.min.js"></script>
+
+    <script>
+        const phone = document.querySelector("#header-phone-country");
+
+        intlTelInput(phone, {
+            allowDropdown: false
+        });
+    </script>
 </body>
 
 </html>
