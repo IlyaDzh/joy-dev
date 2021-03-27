@@ -1,0 +1,41 @@
+<div class="modal" id="call-modal">
+    <div class="modal-content">
+        <h3 class="modal__title">Заказать звонок</h3>
+        <form action="" method="POST" class="modal-form" autocomplete="off">
+            <div class="modal-form__inputs">
+                <div class="input-wrapper">
+                    <input class="input" id="modal-fullname" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё\s]+" required>
+                    <span class="input-validation"></span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="tel" class="input" id="modal-number" placeholder="Телефон" pattern="\+*[0-9]{10,14}"
+                        title="Номер телефона должен быть в формате +79999999999" required>
+                    <span class="input-validation"></span>
+                </div>
+            </div>
+            <div class="modal-form__actions">
+                <button class="btn btn-secondary btn-lg modal-form__button" id="call-close" type="submit">
+                    Заказать звонок
+                </button>
+                <p class="modal-form__caption">
+                    Нажимая на кнопку, вы соглашаетесь c <a href="privacy.html">политикой конфиденциальности</a>
+                </p>
+            </div>
+        </form>
+        <div class="modal__images">
+            <div id="phone">
+                <picture>
+                    <source srcset="./images/modal/modal-phone.webp 1x, ./images/modal/modal-phone@2x.webp 2x"
+                        type="image/webp">
+                    <img src="./images/modal/modal-phone.png" srcset="./images/modal/modal-phone@2x.png 2x" alt="">
+                </picture>
+            </div>
+            <div id="blue-dots">
+                <img src="./images/modal/modal-blue-dots.png" alt="">
+            </div>
+            <div id="red-dots">
+                <img src="./images/modal/modal-red-dots.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>

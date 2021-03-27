@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy Dev</title>
+    <link rel="icon" href="./images/logo-black.png">
+    <link rel="stylesheet" href="./styles/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./styles/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./styles/css/aos.min.css">
+    <link rel="stylesheet" href="./styles/css/tiny-slider.min.css">
+    <link rel="stylesheet" href="./styles/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="./styles/index.min.css">
+    <script src="./scripts/lib/tiny-slider.min.js"></script>
+    <script src="./scripts/lib/aos.min.js"></script>
+    <script src="./scripts/alerts.min.js"></script>
+</head>
+
+<body>
+    {% include "header.html" %}
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-wrapper">
+                <h1 class="header__title">От стартапов </br> до энтерпрайзов </br> и банковских решений</h1>
+                <h1 class="header__title header__title--mobile">От стартапов до энтерпрайзов и банковских решений</h1>
+                <p class="header__subtitle">
+                    Мы создаем высококачественные мобильные </br> и веб-приложения для решения ваших бизнес-задач.
+                </p>
+                <p class="header__subtitle header__subtitle--mobile">
+                    Мы создаем высококачественные мобильные и веб-приложения для решения ваших бизнес-задач.
+                </p>
+                <form action="" method="POST" class="header-contact">
+                    <div class="header-contact__inputs-mobile">
+                        <div class="header-contact__input-phone">
+                            <input type="tel" id="header-phone-country" class="header-contact__input" placeholder="+7"
+                                value="+7" pattern="^\+[0-9]{1,3}" required>
+                        </div>
+                        <div class="header-contact__input-number">
+                            <input type="tel" id="header-phone" class="header-contact__input" placeholder="999-999-9999"
+                                pattern="[0-9]{10}" title="Номер телефона должен состоять из 10 чисел" required>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary header-contact__button" type="submit">
+                        Реализовать мою идею
+                    </button>
+                </form>
+            </div>
+            <div class="header__images">
+                <div id="header-man">
+                    <picture>
+                        <source
+                            srcset="./images/header/background/header-bg.webp 1x, ./images/header/background/header-bg@2x.webp 2x"
+                            type="image/webp">
+                        <img src="./images/header/background/header-bg.png"
+                            srcset="./images/header/background/header-bg@2x.png 2x" alt="">
+                    </picture>
+                </div>
+                <div id="star1">
+                    <img src="./images/header/star1.png" alt="">
+                </div>
+                <div id="star2">
+                    <img src="./images/header/star2.png" alt="">
+                </div>
+                <div id="star3">
+                    <img src="./images/header/star3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="partners" class="section partners">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div id="partners-slider">
+                <div class="partners__img"><img src="./images/partners/partner1.png" alt=""></div>
+                <div class="partners__img"><img src="./images/partners/partner2.png" alt=""></div>
+                <div class="partners__img"><img src="./images/partners/partner3.png" alt=""></div>
+                <div class="partners__img"><img src="./images/partners/partner4.png" alt=""></div>
+                <div class="partners__img"><img src="./images/partners/partner5.png" alt=""></div>
+                <div class="partners__img"><img src="./images/partners/partner1.png" alt=""></div>
+                <div class="partners__img"><img src="./images/partners/partner2.png" alt=""></div>
+                <div class="partners__img"><img src="./images/partners/partner3.png" alt=""></div>
+                <div class="partners__img"><img src="./images/partners/partner4.png" alt=""></div>
+                <div class="partners__img"><img src="./images/partners/partner5.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="section products">
+        <div class="container">
+            <div class="products-list">
+                <div class="products__images">
+                    <div id="dots">
+                        <img src="./images/products/dots.png" alt="">
+                    </div>
+                    <div id="square">
+                        <img src="./images/products/square.png" alt="">
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="products-item">
+                        <div class="products-item__description">
+                            <h2 class="product__title">VR Симулятор</h2>
+                            <p class="product__subtitle">
+                                Мы разработали VR-решение для иммерсивного образования! Теперь
+                                ученики смогут изучить в виртуальном мире, как правильно вести себя в чрезвычайной
+                                ситуации
+                            </p>
+                            <div class="product__downloads">
+                                <a href="#" class="btn btn-primary">
+                                    <img src="./images/products/android.png" alt="Android download">
+                                </a>
+                                <a href="#" class="btn btn-primary">
+                                    <img src="./images/products/apple.png" alt="iOS download">
+                                </a>
+                            </div>
+                            <a href="#" class="product__link">Смотреть кейс</a>
+                        </div>
+                        <div class="products-item__slider">
+                            <div class="products-slider">
+                                <div>
+                                    <div class="products-item__slider__image">
+                                        <img src="./images/products/product1.png" alt="">
+                                        <div class="products-item__slider__image__caption">
+                                            <h5>Лекторий «Прямая речь»</h5>
+                                            <p>Признанный лидер в области интеллектуального досуга</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="products-item__slider__image">
+                                        <img src="./images/products/product1.png" alt="">
+                                        <div class="products-item__slider__image__caption">
+                                            <h5>Лекторий «Прямая речь»</h5>
+                                            <p>Признанный лидер в области интеллектуального досуга</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="products-item">
+                        <div class="products-item__description">
+                            <h2 class="product__title">Zoomr</h2>
+                            <p class="product__subtitle">
+                                Zoomr – это не простое приложение для знакомств. Загружайте селфи и видеоклипы, чтобы
+                                сделать общение более интересным! Доступны только настоящие и активные профили в ленте
+                            </p>
+                            <div class="product__downloads">
+                                <a href="#" class="btn btn-primary">
+                                    <img src="./images/products/apple.png" alt="iOS download">
+                                </a>
+                            </div>
+                            <a href="#" class="product__link">Смотреть кейс</a>
+                        </div>
+                        <div class="products-item__slider">
+                            <div class="products-slider">
+                                <div>
+                                    <div class="products-item__slider__image">
+                                        <img src="./images/products/product2.png" alt="">
+                                        <div class="products-item__slider__image__caption caption--dark">
+                                            <h5>Лекторий «Прямая речь»</h5>
+                                            <p>Признанный лидер в области интеллектуального досуга</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="products-item__slider__image">
+                                        <img src="./images/products/product2.png" alt="">
+                                        <div class="products-item__slider__image__caption caption--dark">
+                                            <h5>Лекторий «Прямая речь»</h5>
+                                            <p>Признанный лидер в области интеллектуального досуга</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="products-item__slider__image">
+                                        <img src="./images/products/product2.png" alt="">
+                                        <div class="products-item__slider__image__caption caption--dark">
+                                            <h5>Лекторий «Прямая речь»</h5>
+                                            <p>Признанный лидер в области интеллектуального досуга</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="products-item__slider__image">
+                                        <img src="./images/products/product2.png" alt="">
+                                        <div class="products-item__slider__image__caption caption--dark">
+                                            <h5>Лекторий «Прямая речь»</h5>
+                                            <p>Признанный лидер в области интеллектуального досуга</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="products-item">
+                        <div class="products-item__description">
+                            <h2 class="product__title">StarShot</h2>
+                            <p class="product__subtitle">
+                                StarShot – это невероятное приложение, чтобы найти новых друзей, пообщаться с ними в
+                                чате и
+                                поделиться новыми фотографиями, видео и сториз.
+                            </p>
+                            <div class="product__downloads">
+                                <a href="#" class="btn btn-primary">
+                                    <img src="./images/products/android.png" alt="Android download">
+                                </a>
+                                <a href="#" class="btn btn-primary">
+                                    <img src="./images/products/apple.png" alt="iOS download">
+                                </a>
+                            </div>
+                            <a href="#" class="product__link">Смотреть кейс</a>
+                        </div>
+                        <div class="products-item__slider">
+                            <div class="products-slider">
+                                <div>
+                                    <div class="products-item__slider__image">
+                                        <img src="./images/products/product3.png" alt="">
+                                        <div class="products-item__slider__image__caption">
+                                            <h5>Лекторий «Прямая речь»</h5>
+                                            <p>Признанный лидер в области интеллектуального досуга</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="products-item__slider__image">
+                                        <img src="./images/products/product3.png" alt="">
+                                        <div class="products-item__slider__image__caption">
+                                            <h5>Лекторий «Прямая речь»</h5>
+                                            <p>Признанный лидер в области интеллектуального досуга</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="products-item">
+                        <div class="products-item__description">
+                            <h2 class="product__title">Прямая речь</h2>
+                            <p class="product__subtitle">
+                                Мы разработали VR-решение для иммерсивного образования! Теперь ученики смогут изучить в
+                                виртуальном мире, как правильно вести себя в чрезвычайной ситуации
+                            </p>
+                            <div class="product__downloads">
+                                <a href="#" class="btn btn-primary">
+                                    <img src="./images/products/android.png" alt="Android download">
+                                </a>
+                                <a href="#" class="btn btn-primary">
+                                    <img src="./images/products/apple.png" alt="iOS download">
+                                </a>
+                            </div>
+                            <a href="#" class="product__link">Смотреть кейс</a>
+                        </div>
+                        <div class="products-item__slider">
+                            <div class="products-slider">
+                                <div>
+                                    <div class="products-item__slider__image">
+                                        <img src="./images/products/product4.png" alt="">
+                                        <div class="products-item__slider__image__caption">
+                                            <h5>Лекторий «Прямая речь»</h5>
+                                            <p>Признанный лидер в области интеллектуального досуга</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="products-item__slider__image">
+                                        <img src="./images/products/product4.png" alt="">
+                                        <div class="products-item__slider__image__caption">
+                                            <h5>Лекторий «Прямая речь»</h5>
+                                            <p>Признанный лидер в области интеллектуального досуга</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="products-item__slider__image">
+                                        <img src="./images/products/product4.png" alt="">
+                                        <div class="products-item__slider__image__caption">
+                                            <h5>Лекторий «Прямая речь»</h5>
+                                            <p>Признанный лидер в области интеллектуального досуга</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="products-all">
+                    <a href="cases.html" class="btn btn-primary btn-lg">Еще работы</a>
+                    <!-- <button class="btn btn-primary btn-lg">Еще работы</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section achievements">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="container">
+                <h2 class="section__title">Достижения</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 achievements-item">
+                        <div class="achievements-item__image">
+                            <img src="./images/achievements/achievement1.svg" alt="">
+                        </div>
+                        <p class="achievements-item__description">
+                            Доверенный фичеринг <span class="break-line"></span> в App Store
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 achievements-item">
+                        <div class="achievements-item__image">
+                            <img src="./images/achievements/achievement2.svg" alt="">
+                        </div>
+                        <p class="achievements-item__description">
+                            Более <span class="break-line"></span> 1 000 000 пользователей
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 achievements-item">
+                        <div class="achievements-item__image">
+                            <img src="./images/achievements/achievement3.svg" alt="">
+                        </div>
+                        <p class="achievements-item__description">
+                            Разрабатываем государственные заказы
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 achievements-item">
+                        <div class="achievements-item__image">
+                            <img src="./images/achievements/achievement4.svg" alt="">
+                        </div>
+                        <p class="achievements-item__description">
+                            5 разработанных приложений для банков
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section services">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="services-item">
+                    <div class="services-item__left services-item__left--mobile">
+                        <h3 class="services-item__title">Мобильная разработка</h3>
+                        <div class="services-item__tags">
+                            <div class="tags-item">iOS</div>
+                            <div class="tags-item">Андроид</div>
+                            <div class="tags-item">Соцсети</div>
+                        </div>
+                        <p class="services-item__description">
+                            Наши профессиональные разработчики iOS и Android создают высококачественный продукт, который
+                            будет оптимизировать задачи вашего бизнеса и способствовать увеличению вашей прибыли
+                        </p>
+                        <a href="#contacts" class="btn btn-secondary btn-lg services-item__btn">Получить оценку</a>
+                    </div>
+                    <div class="services-item__right">
+                        <div class="services-item__image services-item__image--mobile">
+                            <picture>
+                                <source
+                                    srcset="./images/services/mobile-service.webp 1x, ./images/services/mobile-service@2x.webp 2x"
+                                    type="image/webp">
+                                <img src="./images/services/mobile-service.png"
+                                    srcset="./images/services/mobile-service@2x.png 2x" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="services-item">
+                    <div class="services-item__left services-item__left--web">
+                        <h3 class="services-item__title">Web разработка</h3>
+                        <div class="services-item__tags">
+                            <div class="tags-item">Сайты</div>
+                            <div class="tags-item">Магазины</div>
+                            <div class="tags-item">Лендинги</div>
+                            <div class="tags-item">Сервисы</div>
+                        </div>
+                        <p class="services-item__description">
+                            Команда наших специалистов создает функционально сложные, интеграционные и высоконагруженные
+                            проекты. Имеет большой опыт создания сайтов и сервисов, интернет-магазинов и лендингов
+                        </p>
+                        <a href="#contacts" class="btn btn-secondary btn-lg services-item__btn">Получить оценку</a>
+                    </div>
+                    <div class="services-item__right">
+                        <div class="services-item__image services-item__image--web">
+                            <picture>
+                                <source
+                                    srcset="./images/services/web-service.webp 1x, ./images/services/web-service@2x.webp 2x"
+                                    type="image/webp">
+                                <img src="./images/services/web-service.png"
+                                    srcset="./images/services/web-service@2x.png 2x" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section experience">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="container">
+                <div class="experience-header">
+                    <h2 class="section__title">Делимся опытом</h2>
+                    <div class="experience-header__controls">
+                        <button id="experience-slider-prev">
+                            <svg width="16" height="28" viewBox="0 0 16 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.337573 13.0554L14.0404 0.312415C14.4893 -0.104848 15.2162 -0.104146 15.6644 0.314573C16.1123 0.733239 16.1111 1.41145 15.6621 1.82903L2.77492 13.8135L15.6626 25.798C16.1115 26.2156 16.1127 26.8934 15.6649 27.3121C15.4402 27.522 15.1458 27.627 14.8515 27.627C14.5579 27.627 14.2647 27.5227 14.0404 27.3143L0.337573 14.5716C0.12134 14.371 1.52267e-06 14.098 1.54968e-06 13.8135C1.57668e-06 13.5291 0.121688 13.2563 0.337573 13.0554Z"
+                                    fill="#121B30" />
+                            </svg>
+                        </button>
+                        <button id="experience-slider-next">
+                            <svg width="16" height="28" viewBox="0 0 16 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.6624 14.5716L1.95962 27.3145C1.51066 27.7318 0.783794 27.7311 0.33559 27.3124C-0.112266 26.8937 -0.111109 26.2155 0.337905 25.7979L13.2251 13.8134L0.337447 1.82899C-0.11151 1.41135 -0.112667 0.733572 0.335132 0.314854C0.559813 0.104954 0.854161 2.04488e-06 1.14851 2.09227e-06C1.4421 2.13955e-06 1.73529 0.104252 1.95957 0.312695L15.6624 13.0553C15.8787 13.2559 16 13.529 16 13.8134C16 14.0979 15.8783 14.3706 15.6624 14.5716Z"
+                                    fill="#121B30" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="experience-slider" id="experience-slider">
+
+                    <div>
+                        <div class="experience-slider__item experience-slider__item--lg">
+                            <a href="post.html" class="experience-slider__item__image">
+                                <img src="./images/experience/experience1.jpg" alt="">
+                                <div class="image-blur">Читать</div>
+                            </a>
+                            <a href="post.html" class="experience-slider__item__description">
+                                Как дополненная реальность помогает создавать комфорт в доме
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="experience-slider__item">
+                            <a href="post.html" class="experience-slider__item__image">
+                                <img src="./images/experience/experience2.jpg" alt="">
+                                <div class="image-blur">Читать</div>
+                            </a>
+                            <a href="post.html" class="experience-slider__item__description">
+                                Разработка приложения для туризма
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="experience-slider__item">
+                            <a href="post.html" class="experience-slider__item__image">
+                                <img src="./images/experience/experience3.jpg" alt="">
+                                <div class="image-blur">Читать</div>
+                            </a>
+                            <a href="post.html" class="experience-slider__item__description">
+                                Изучаем виджеты в iOS 14 и App Library
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="experience-slider__item">
+                            <a href="post.html" class="experience-slider__item__image">
+                                <img src="./images/experience/experience3.jpg" alt="">
+                                <div class="image-blur">Читать</div>
+                            </a>
+                            <a href="post.html" class="experience-slider__item__description">
+                                Изучаем виджеты в iOS 14 и App Library
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="experience-all">
+                    <a href="blog.html" class="btn btn-primary btn-lg">
+                        <img src="./images/experience/eye.svg" style="margin-right: 16px;" alt="">
+                        Еще статьи
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="section contact">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact__dots">
+                        <img class="left-dots" src="./images/contact/dots.png" alt="">
+                        <img class="right-dots" src="./images/contact/dots.png" alt="">
+                    </div>
+                    <h1 class="contact__title">Давайте вместе создадим крутой проект!</h1>
+                    <div class="contact-sides">
+                        <div class="contact-left">
+                            <div class="contact__avatar">
+                                <img src="./images/contact/sales-manager.png" alt="">
+                            </div>
+                            <h4 class="contact__name">Александр Михайлов</h4>
+                            <p class="contact__occupation">Специалист по продажам</p>
+                            <div class="contact__info">
+                                8 (800) 250-84-78
+                                </br>
+                                hello@joy-dev.com
+                            </div>
+                        </div>
+                        <div class="contact-right">
+                            <form action="" method="POST" class="contact-form" autocomplete="off">
+                                <div class="contact-form__inputs-wrapper">
+                                    <div class="input-wrapper">
+                                        <input class="input" id="fullname" placeholder="Имя"
+                                            pattern="[A-Za-zА-Яа-яЁё\s]+" required>
+                                        <span class="input-validation"></span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input class="input" id="email" type="email" placeholder="E-mail" required>
+                                        <span class="input-validation"></span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="tel" class="input" id="number" placeholder="Телефон"
+                                            pattern="\+*[0-9]{10,14}"
+                                            title="Номер телефона должен быть в формате +79999999999" required>
+                                        <span class="input-validation"></span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input class="input" id="company_name" placeholder="Название компании" required>
+                                        <span class="input-validation"></span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input class="input" id="about_project" placeholder="Пара слов о проекте"
+                                            required>
+                                        <span class="input-validation"></span>
+                                    </div>
+                                </div>
+                                <div class="contact-form__button-wrapper">
+                                    <button class="btn btn-secondary btn-lg contact-form__button" type="submit">
+                                        Отправить
+                                    </button>
+                                    <p class="contact-form__caption">
+                                        Нажимая на кнопку, вы соглашаетесь c
+                                        <a href="privacy.html">политикой конфиденциальности</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "footer.html" %}
+
+    {% include "modals.html" %}
+
+    {% include "alerts.html" %}
+
+    <script>
+        const partnersSlider = tns({
+            container: "#partners-slider",
+            mode: "carousel",
+            controls: false,
+            swipeAngle: false,
+            nav: false,
+            loop: true,
+            autoplayButtonOutput: false,
+            speed: 300,
+            slideBy: 2,
+            preventScrollOnTouch: true,
+            preventActionWhenRunning: true,
+            autoplayResetOnVisibility: false,
+            responsive: {
+                1600: {
+                    items: 7,
+                },
+                1350: {
+                    items: 6,
+                },
+                1150: {
+                    items: 5,
+                },
+                992: {
+                    items: 4,
+                },
+                720: {
+                    items: 7,
+                },
+                520: {
+                    items: 5,
+                },
+                375: {
+                    items: 4
+                },
+                0: {
+                    items: 3
+                }
+            },
+        });
+
+        let lastScrollPosition = window.pageYOffset;
+        window.addEventListener("scroll", () => {
+            const offset = window.pageYOffset;
+
+            if (offset > lastScrollPosition) {
+                partnersSlider.goTo('prev');
+            } else partnersSlider.goTo("next");
+
+            lastScrollPosition = offset;
+        })
+
+        const products = document.querySelectorAll('.products-slider');
+        products.forEach(sliderContainer => {
+            const productSlider = tns({
+                container: sliderContainer,
+                rewind: true,
+                autoplay: true,
+                autoplayButtonOutput: false,
+                items: 1,
+                mouseDrag: true,
+                controls: false,
+                swipeAngle: false,
+                nav: true,
+                loop: true,
+                speed: 700,
+                preventActionWhenRunning: true,
+            });
+
+            let mouseCoordY, mouseCoordX;
+            sliderContainer.addEventListener('mousedown', (e) => {
+                mouseCoordY = e.clientY;
+                mouseCoordX = e.clientX;
+            })
+
+            sliderContainer.addEventListener('mouseup', (e) => {
+                if (mouseCoordY === e.clientY && mouseCoordX === e.clientX) {
+                    productSlider.goTo('next');
+                }
+            })
+        });
+
+        const experienceSlider = tns({
+            container: "#experience-slider",
+            prevButton: "#experience-slider-prev",
+            nextButton: "#experience-slider-next",
+            autoWidth: true,
+            gutter: 18,
+            controls: true,
+            swipeAngle: false,
+            nav: false,
+            loop: false,
+            speed: 400,
+            responsive: {
+                992: {
+                    gutter: 32
+                }
+            }
+        });
+    </script>
+
+    <script src="./scripts/aos-config.min.js"></script>
+    <script src="./scripts/menu.min.js"></script>
+    <script src="./scripts/modal.min.js"></script>
+    <script src="./scripts/lib/intlTelInput.min.js"></script>
+
+    <script>
+        const phone = document.querySelector("#header-phone-country");
+
+        intlTelInput(phone, {
+            allowDropdown: false
+        });
+    </script>
+</body>
+
+</html>

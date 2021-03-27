@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy Dev</title>
+    <link rel="icon" href="./images/logo-black.png">
+    <link rel="stylesheet" href="./styles/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./styles/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./styles/css/aos.min.css">
+    <link rel="stylesheet" href="./styles/index.min.css">
+    <script src="./scripts/lib/aos.min.js"></script>
+    <script src="./scripts/alerts.min.js"></script>
+</head>
+
+<body>
+    {% include "header.html" %}
+
+    <section class="section blog">
+        <div class="container">
+            <div class="breadcrumbs">
+                <div class="breadcrumbs-content">
+                    <a href="index.html" class="breadcrumbs__item">Главная</a>
+                    <div class="breadcrumbs__item">Блог</div>
+                </div>
+                <div class="breadcrumbs__images">
+                    <div id="star1">
+                        <img src="./images/breadcrumbs/star1.png" alt="">
+                    </div>
+                    <div id="star2">
+                        <img src="./images/breadcrumbs/star2.png" alt="">
+                    </div>
+                    <div id="star3">
+                        <img src="./images/breadcrumbs/star3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <h1 class="section__title">Блог</h1>
+
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="blog-grid">
+                    <div class="blog-grid__item blog-grid__item--1">
+                        <a href="post.html" class="blog-grid__item__image">
+                            <img src="./images/blog/blog1.png" alt="">
+                            <div class="image-blur">Читать</div>
+                        </a>
+                        <a href="post.html" class="blog-grid__item__description">
+                            Как дополненная реальность помогает создавать комфорт в доме
+                        </a>
+                    </div>
+                    <div class="blog-grid__item blog-grid__item--2">
+                        <a href="post.html" class="blog-grid__item__image">
+                            <img src="./images/blog/blog2.png" alt="">
+                            <div class="image-blur">Читать</div>
+                        </a>
+                        <a href="post.html" class="blog-grid__item__description">Разработка приложения для туризма</a>
+                    </div>
+                    <div class="blog-grid__item blog-grid__item--3">
+                        <a href="post.html" class="blog-grid__item__image">
+                            <img src="./images/blog/blog3.png" alt="">
+                            <div class="image-blur">Читать</div>
+                        </a>
+                        <a href="post.html" class="blog-grid__item__description">Изучаем виджеты в iOS 14 и App
+                            Library</a>
+                    </div>
+                    <div class="blog-grid__item blog-grid__item--4">
+                        <a href="post.html" class="blog-grid__item__image">
+                            <img src="./images/blog/blog4.png" alt="">
+                            <div class="image-blur">Читать</div>
+                        </a>
+                        <a href="post.html" class="blog-grid__item__description">Разработка приложения для туризма</a>
+                    </div>
+                    <div class="blog-grid__item blog-grid__item--5">
+                        <a href="post.html" class="blog-grid__item__image">
+                            <img src="./images/blog/blog5.png" alt="">
+                            <div class="image-blur">Читать</div>
+                        </a>
+                        <a href="post.html" class="blog-grid__item__description">Изучаем виджеты в iOS 14 и App
+                            Library</a>
+                    </div>
+                    <div class="blog-grid__item blog-grid__item--6">
+                        <a href="post.html" class="blog-grid__item__image">
+                            <img src="./images/blog/blog6.png" alt="">
+                            <div class="image-blur">Читать</div>
+                        </a>
+                        <a href="post.html" class="blog-grid__item__description">Разработка приложения для туризма</a>
+                    </div>
+                    <div class="blog-grid__item blog-grid__item--7">
+                        <a href="post.html" class="blog-grid__item__image">
+                            <img src="./images/blog/blog7.png" alt="">
+                            <div class="image-blur">Читать</div>
+                        </a>
+                        <a href="post.html" class="blog-grid__item__description">Разработка приложения для туризма</a>
+                    </div>
+                    <div class="blog-grid__item blog-grid__item--8">
+                        <a href="post.html" class="blog-grid__item__image">
+                            <img src="./images/blog/blog8.png" alt="">
+                            <div class="image-blur">Читать</div>
+                        </a>
+                        <a href="post.html" class="blog-grid__item__description">Изучаем виджеты в iOS 14 и App
+                            Library</a>
+                    </div>
+                    <div class="blog-grid__item blog-grid__item--9">
+                        <a href="post.html" class="blog-grid__item__image">
+                            <img src="./images/blog/blog9.png" alt="">
+                            <div class="image-blur">Читать</div>
+                        </a>
+                        <a href="post.html" class="blog-grid__item__description">Разработка приложения для туризма</a>
+                    </div>
+                    <div class="blog-grid__item blog-grid__item--10">
+                        <a href="post.html" class="blog-grid__item__image">
+                            <img src="./images/blog/blog10.png" alt="">
+                            <div class="image-blur">Читать</div>
+                        </a>
+                        <a href="post.html" class="blog-grid__item__description">Изучаем виджеты в iOS 14 и App
+                            Library</a>
+                    </div>
+                </div>
+                <div class="blog-all">
+                    <!-- <a href="#" class="btn btn-primary btn-lg">Показать еще</a> -->
+                    <button class="btn btn-primary btn-lg">Показать еще</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    {% include "footer.html" %}
+
+    {% include "modals.html" %}
+
+    {% include "alerts.html" %}
+
+    <script src="./scripts/aos-config.min.js"></script>
+    <script src="./scripts/menu.min.js"></script>
+    <script src="./scripts/modal.min.js"></script>
+</body>
+
+</html>
